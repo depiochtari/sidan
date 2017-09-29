@@ -8,10 +8,10 @@
                 <div class="panel-heading">Data Nelayan</div>
                 <div class="panel-body">
 					<ol>
-						@foreach($datanelayan as $nelayan
-						<li>{{$nelayan=>nama_nelayan}}</li>
+						@foreach($datanelayan as $nelayan)
+						<li>{{$nelayan->nama_nelayan}}</li>
 						@endforeach
-					<ol>
+					</ol>
                 </div>
             </div>
         </div>
