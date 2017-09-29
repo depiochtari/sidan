@@ -19,10 +19,7 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::auth();
+Route::get('nelayan/create', 'NelayanController@create');
+Route::get('nelayan', 'NelayanController@index');
+Route::post('/nelayan', 'NelayanController@store');
 
-Route::get('/home', 'HomeController@index');
-
-Route::auth();
-
-Route::get('/home', 'HomeController@index');
