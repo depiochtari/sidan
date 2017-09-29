@@ -18,8 +18,11 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+<<<<<<< HEAD
 
 Route::get('nelayan/create', 'NelayanController@create');
 Route::get('nelayan', 'NelayanController@index');
 Route::post('/nelayan', 'NelayanController@store');
 
+=======
+>>>>>>> a58cbd7a9dc531e38bc2ec6425bd76ad9ff16c6d
