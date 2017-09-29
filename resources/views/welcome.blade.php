@@ -8,7 +8,8 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
-                    Selamat Datang Di Website Saya </div>
+                    Your Application's Landing Page.
+                </div>
             </div>
         </div>
     </div>

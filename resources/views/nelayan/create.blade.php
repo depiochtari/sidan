@@ -14,7 +14,7 @@
                             <label for="name" class="col-md-4 control-label">Nama</label>
 
                             <div class="col-md-6">
-                                <input id="nama" type="text" class="form-control" name="nama" value="{{ old('nama') }}">
+                                <input id="nama" type="text" class="form-control" name="nama_nelayan" value="{{ old('nama') }}">
 
                                 @if ($errors->has('nama'))
                                     <span class="help-block">
