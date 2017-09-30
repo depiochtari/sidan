@@ -17,6 +17,6 @@ class Alamat extends Model
 	protected $table = 'alamat';
 
 	protected $fillable = ['alamat_nelayan'];
-	protected $fillable = ['nama', 'alamat'];
+
 
 }
