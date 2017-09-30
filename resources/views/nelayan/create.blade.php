@@ -17,8 +17,10 @@
 
                             <div class="col-md-6">
                                 <input id="nama" type="text" class="form-control" name="nama_nelayan" value="{{ old('nama') }}">
-                                
+
                                 <input id="alamat" type="text" class="form-control" name="alamat_nelayan" value="{{ old('alamat') }}">
+
+                                <input id="nama" type="text" class="form-control" name="nama" value="{{ old('nama') }}">
 
                                 @if ($errors->has('nama'))
                                     <span class="help-block">
@@ -27,11 +29,23 @@
                                 @endif
                             </div>
                         </div>
+                        <div class="form-group{{ $errors->has('alamat') ? ' has-error' : '' }}">
++                            <label for="alamat" class="col-md-4 control-label">Alamat</label>
++                            <div class="col-md-6">
++                                <input id="alamat" type="text" class="form-control" name="alamat" value="{{ old('alamat') }}">
++                                @if ($errors->has('alamat'))
++                                    <span class="help-block">
++                                        <strong>{{ $errors->first('alamat') }}</strong>
++                                    </span>
++                                @endif
++                            </div>
++                        </div>
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
                                     <i class="fa fa-btn fa-user"></i> Simpan
+                                    <i class="fa fa-btn fa-save"></i> Simpan
                                 </button>
                             </div>
                         </div>
@@ -41,4 +55,5 @@
         </div>
     </div>
 </div>
+@endsection
 @endsection
