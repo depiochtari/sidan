@@ -13,15 +13,18 @@
                         <div class="form-group{{ $errors->has('nama') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Nama</label>
 
-                            <label for="alamat" class="col-md-4 control-label">Alamat</label>
 
                             <div class="col-md-6">
+<<<<<<< HEAD
                                 <input id="nama" type="text" class="form-control" name="nama_nelayan" value="{{ old('nama') }}">
 
                                 <input id="alamat" type="text" class="form-control" name="alamat_nelayan" value="{{ old('alamat') }}">
 
                                 <input id="nama" type="text" class="form-control" name="nama" value="{{ old('nama') }}">
 
+=======
+                                <input id="nama" type="text" class="form-control" name="nama" value="{{ old('nama') }}">
+>>>>>>> 8b63d6738d2149a2f9856ce3e11c417fae677d11
                                 @if ($errors->has('nama'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('nama') }}</strong>
@@ -30,6 +33,7 @@
                             </div>
                         </div>
                         <div class="form-group{{ $errors->has('alamat') ? ' has-error' : '' }}">
+<<<<<<< HEAD
 +                            <label for="alamat" class="col-md-4 control-label">Alamat</label>
 +                            <div class="col-md-6">
 +                                <input id="alamat" type="text" class="form-control" name="alamat" value="{{ old('alamat') }}">
@@ -40,11 +44,26 @@
 +                                @endif
 +                            </div>
 +                        </div>
+=======
+                            <label for="alamat" class="col-md-4 control-label">Alamat</label>
+                            <div class="col-md-6">
+                                <input id="alamat" type="text" class="form-control" name="alamat" value="{{ old('alamat') }}">
+                                @if ($errors->has('alamat'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('alamat') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+>>>>>>> 8b63d6738d2149a2f9856ce3e11c417fae677d11
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
+<<<<<<< HEAD
                                     <i class="fa fa-btn fa-user"></i> Simpan
+=======
+>>>>>>> 8b63d6738d2149a2f9856ce3e11c417fae677d11
                                     <i class="fa fa-btn fa-save"></i> Simpan
                                 </button>
                             </div>
@@ -56,4 +75,7 @@
     </div>
 </div>
 @endsection
+<<<<<<< HEAD
 @endsection
+=======
+>>>>>>> 8b63d6738d2149a2f9856ce3e11c417fae677d11
