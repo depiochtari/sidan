@@ -10,7 +10,11 @@ class Nelayan extends Model
 	
 	protected $fillable = ['nama_nelayan'];
 
-	protected $table ='alamat';
+}
+
+class Alamat extends Model
+{
+	protected $table = 'alamat';
 
 	protected $fillable = ['alamat_nelayan'];
 

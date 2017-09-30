@@ -12,10 +12,12 @@
 
                         <div class="form-group{{ $errors->has('nama') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Nama</label>
+
                             <label for="alamat" class="col-md-4 control-label">Alamat</label>
 
                             <div class="col-md-6">
                                 <input id="nama" type="text" class="form-control" name="nama_nelayan" value="{{ old('nama') }}">
+                                
                                 <input id="alamat" type="text" class="form-control" name="alamat_nelayan" value="{{ old('alamat') }}">
 
                                 @if ($errors->has('nama'))
