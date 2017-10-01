@@ -7,11 +7,26 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Data Nelayan</div>
                 <div class="panel-body">
-					<ol>
-						@foreach($datanelayan as $nelayan)
-						<li>{{$nelayan->nama_nelayan}}</li>
-						@endforeach
-					</ol>
+                    <table class="table table-condensed">
+                        <th>
+                            <td>No</td>
+                            <td>Nama</td>
+                            <td>Alamat</td>
+                            <td>Detail</td>
+                            <td>Edit</td>
+                            <td>Hapus</td>
+                        </th>
+                        @foreach($datanelayan as $nelayan)
+                        <tr>
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $nelayan->nama }}</td>
+                            <td>{{ $nelayan->alamat }}</td>
+                            <td><a href="{{ url('nelayan/'.$nelayan->id) }}">Detail</a></td>
+                            <td><a href="{{ url('nelayan/'.$nelayan->id.'/edit') }}">Edit</a></td>
+                            <td><a href="{{ url('nelayan/'.$nelayan->id) }}">Hapus</a></td>
+                        </tr>
+                        @endforeach
+                    </table>
                 </div>
             </div>
         </div>
