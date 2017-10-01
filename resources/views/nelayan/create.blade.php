@@ -13,24 +13,19 @@
                         <div class="form-group{{ $errors->has('nama') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Nama</label>
 
-<<<<<<< HEAD
                              <label for="alamat" class="col-md-4 control-label">Alamat</label>
 
-=======
->>>>>>> 6a1e6d097f45b9252ffc64db45396c35cef66340
                             <div class="col-md-6">
+                                <input id="nama" type="text" class="form-control" name="nama_nelayan" value="{{ old('nama') }}">
+
+                                <input id="alamat" type="text" class="form-control" name="alamat" value="{{ old('alamat') }}">
+
                                 <input id="nama" type="text" class="form-control" name="nama" value="{{ old('nama') }}">
-<<<<<<< HEAD
 
 
                                  @if ($errors->has('nama'))
                                      <span class="help-block">
                                          <strong>{{ $errors->first('nama') }}</strong>
-=======
-                                @if ($errors->has('nama'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('nama') }}</strong>
->>>>>>> 6a1e6d097f45b9252ffc64db45396c35cef66340
                                     </span>
                                 @endif
 
@@ -54,11 +49,4 @@
                         </div>
                 </div>
             </div>
-<<<<<<< HEAD
 @endsection
-=======
-        </div>
-    </div>
-</div>
-@endsection
->>>>>>> 6a1e6d097f45b9252ffc64db45396c35cef66340
