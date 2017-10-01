@@ -14,8 +14,12 @@ class CreateNelayanTable extends Migration
     {
         Schema::create('nelayan', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('kn');
             $table->string('nama');
 			$table->string('alamat');
+            $table->string('status');
+            $table->string('kub');
+            $table->string('hp');
 			$table->timestamps();
         });
     }
