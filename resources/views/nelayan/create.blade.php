@@ -12,31 +12,25 @@
 
                         <div class="form-group{{ $errors->has('nama') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Nama</label>
-
-                             <label for="alamat" class="col-md-4 control-label">Alamat</label>
-
                             <div class="col-md-6">
-                                <input id="nama" type="text" class="form-control" name="nama_nelayan" value="{{ old('nama') }}">
-
-                                <input id="alamat" type="text" class="form-control" name="alamat" value="{{ old('alamat') }}">
-
                                 <input id="nama" type="text" class="form-control" name="nama" value="{{ old('nama') }}">
-
-
-                                 @if ($errors->has('nama'))
+                                @if ($errors->has('nama'))
                                      <span class="help-block">
                                          <strong>{{ $errors->first('nama') }}</strong>
                                     </span>
                                 @endif
+                            </div>
+                        </div>
 
+                        <div class="form-group{{ $errors->has('alamat') ? ' has-error' : '' }}">
+                            <label for="alamat" class="col-md-4 control-label">Alamat</label>
+                            <div class="col-md-6">
+                                <input id="alamat" type="text" class="form-control" name="alamat" value="{{ old('alamat') }}">
                                 @if ($errors->has('alamat'))
                                      <span class="help-block">
                                          <strong>{{ $errors->first('alamat') }}</strong>
                                     </span>
                                 @endif
-                            </div>
-                        </div>
-                        <div 
                             </div>
                         </div>
 
@@ -47,6 +41,10 @@
                                 </button>
                             </div>
                         </div>
+                    </form>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
 @endsection
