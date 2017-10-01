@@ -9,7 +9,7 @@
                 <div class="panel-body">
                     <table class="table table-condensed">
                         <th>
-                            <td>No</td>
+                            <td>ID</td>
                             <td>Nama</td>
                             <td>Alamat</td>
                             <td>Detail</td>
@@ -18,7 +18,7 @@
                         </th>
                         @foreach($datanelayan as $nelayan)
                         <tr>
-                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $nelayan->id }}</td>
                             <td>{{ $nelayan->nama }}</td>
                             <td>{{ $nelayan->alamat }}</td>
                             <td><a href="{{ url('nelayan/'.$nelayan->id) }}">Detail</a></td>
