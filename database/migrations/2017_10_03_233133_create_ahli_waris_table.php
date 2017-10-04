@@ -14,7 +14,7 @@ class CreateAhliWarisTable extends Migration
     {
         Schema::create('ahli_waris', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nama_ahli_waris');
+            $table->string('nama');
             $table->timestamps();
         });
     }

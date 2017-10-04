@@ -51,8 +51,20 @@
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nelayan <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
 					    <li><a href="{{ url('/nelayan') }}">Nelayan</a></li>
 					    <li><a href="{{ url('/nelayan/create') }}">Tambah Nelayan</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ahli Waris <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="{{ url('/ahli-waris') }}">Ahli Waris</a></li>
+                        <li><a href="{{ url('/ahli-waris/create') }}">Tambah Ahli Waris</a></li>
+                      </ul>
+                    </li>
                     <!-- Authentication Links -->
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>

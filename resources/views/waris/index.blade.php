@@ -10,7 +10,7 @@
                     <ol
                         @foreach($datawaris as $ahli_waris)
                         
-                        <li>{{$ahli_waris->ahli_waris}}</li>
+                        <li>{{$ahli_waris->nama}}</li>
 
                         @endforeach
                     </ol>
