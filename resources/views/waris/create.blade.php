@@ -11,7 +11,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('waris') ? ' has-error' : '' }}">
-                            <label for="waris" class="col-md-4 control-label">Ahli Waris</label>
+                            <label for="waris" class="col-md-4 control-label">Nama Ahli Waris</label>
 
                             <div class="col-md-6">
                                 <input id="waris" type="text" class="form-control" name="waris" value="{{ old('waris') }}">

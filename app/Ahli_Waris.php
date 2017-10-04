@@ -8,5 +8,5 @@ class Ahli_Waris extends Model
 {
     protected $table = 'ahli_waris';
 
-    protected $fillable = ['nama'];
+    protected $fillable = ['ahli_waris'];
 }
