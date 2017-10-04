@@ -16,6 +16,8 @@
                             <td>Status</td>
                             <td>KUB</td>
                             <td>HP</td>
+                            <td>BANK</td>
+                            <td>No Rekening</td>
                             <td>Edit</td>
                             <td>Hapus</td>
                         </tr>
@@ -28,6 +30,8 @@
                             <td>{{ $nelayan->status }}</td>
                             <td>{{ $nelayan->kub }}</td>
                             <td>{{ $nelayan->hp }}</td>
+                            <td>{{ $nelayan->bank }}</td>
+                            <td>{{ $nelayan->norek }}</td>
                             <td><a href="{{ url('nelayan/'.$nelayan->id.'/edit') }}">Edit</a></td>
                             <td><a href="{{ url('nelayan/'.$nelayan->id) }}">Hapus</a></td>
                         </tr>

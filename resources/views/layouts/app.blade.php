@@ -52,7 +52,7 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
 					    <li><a href="{{ url('/nelayan') }}">Nelayan</a></li>
-					    <li><a href="{{ url('/nelayan/create') }}">Nama Nelayan</a></li>
+					    <li><a href="{{ url('/nelayan/create') }}">Tambah Nelayan</a></li>
                     <!-- Authentication Links -->
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>

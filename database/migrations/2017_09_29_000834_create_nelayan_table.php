@@ -20,6 +20,8 @@ class CreateNelayanTable extends Migration
             $table->string('status');
             $table->string('kub');
             $table->string('hp');
+            $table->string('bank');
+            $table->string('norek');
 			$table->timestamps();
         });
     }
