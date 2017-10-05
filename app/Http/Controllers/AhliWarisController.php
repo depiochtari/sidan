@@ -16,8 +16,8 @@ class AhliWarisController extends Controller
      */
     public function index()
     {
-        $datawaris = ahliwaris::all();
-        return view('waris.index', compact('$dataahli_waris'));
+        $dataahli_waris = ahliwaris::all();
+        return view('waris.index', compact('dataahli_waris'));
     }
 
     /**
