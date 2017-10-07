@@ -25,3 +25,6 @@ Route::post('nelayan', 'NelayanController@store');
 Route::get('ahli-waris/create', 'AhliWarisController@create');
 Route::get('ahli-waris', 'AhliWarisController@index');
 Route::post('ahli-waris', 'AhliWarisController@store');
+Route::get('anak/create', 'AnakController@create');
+Route::get('anak', 'AnakController@index');
+Route::post('anak', 'AnakController@store');

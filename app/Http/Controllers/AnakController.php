@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use app\ahliwaris;
+use App\Anak;
 
-class Ahli_Wariscontroller extends Controller
+class AnakController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,8 @@ class Ahli_Wariscontroller extends Controller
      */
     public function index()
     {
-        $dataahli_waris = ahliwaris::all();
-        return view('ahli_waris.index', compact('dataahli_waris'));
+        $dataanak = Anak::all();
+        return view('anak.index', compact('dataanak'));
     }
 
     /**
@@ -27,7 +27,7 @@ class Ahli_Wariscontroller extends Controller
      */
     public function create()
     {
-        return view('Ahli_Waris.create');
+        return view('anak.create');
     }
 
     /**
@@ -36,10 +36,10 @@ class Ahli_Wariscontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, ahliwaris $ahli_waris)
+    public function store(Request $request, Anak $anak)
     {
-        $ahliwaris->create($request->all());
-        return back();
+       $anak->create($request->all());
+       return back();
     }
 
     /**

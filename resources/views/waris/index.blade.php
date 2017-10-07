@@ -9,6 +9,7 @@
                 <div class="panel-body">
                     <table class="table table-condensed">
                         <tr>
+                            <td>ID</td>
                             <td>Nama Ahli Waris</td>
                             <td>Nama Suami</td>
                             <td>NIK</td>
@@ -22,6 +23,7 @@
                         </tr>
                         @foreach($dataahli_waris as $ahli_waris)
                         <tr>
+                            <td>{{ $ahli_waris->id }}</td>
                             <td>{{ $ahli_waris->nama }}</td>
                             <td>{{ $ahli_waris->suami }}</td>
                             <td>{{ $ahli_waris->nik }}</td>
