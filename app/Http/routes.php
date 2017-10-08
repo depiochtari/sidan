@@ -28,3 +28,6 @@ Route::post('ahli-waris', 'AhliWarisController@store');
 Route::get('anak/create', 'AnakController@create');
 Route::get('anak', 'AnakController@index');
 Route::post('anak', 'AnakController@store');
+Route::get('kub/create', 'KubController@create');
+Route::get('kub', 'KubController@index');
+Route::post('kub', 'KubController@store');
