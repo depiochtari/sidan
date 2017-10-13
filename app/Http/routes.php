@@ -24,6 +24,7 @@ Route::get('nelayan', 'NelayanController@index');
 Route::post('nelayan', 'NelayanController@store');
 Route::get('nelayan/{nelayan}/edit', 'NelayanController@edit');
 Route::put('nelayan/{nelayan}', 'NelayanController@update');
+Route::delete('nelayan/{nelayan}', 'NelayanController@destroy');
 
 Route::get('ahli-waris/create', 'AhliWarisController@create');
 Route::get('ahli-waris', 'AhliWarisController@index');
