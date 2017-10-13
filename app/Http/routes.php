@@ -22,6 +22,9 @@ Route::get('/home', 'HomeController@index');
 Route::get('nelayan/create', 'NelayanController@create');
 Route::get('nelayan', 'NelayanController@index');
 Route::post('nelayan', 'NelayanController@store');
+Route::get('nelayan/{nelayan}/edit', 'NelayanController@edit');
+Route::put('nelayan/{nelayan}', 'NelayanController@update');
+
 Route::get('ahli-waris/create', 'AhliWarisController@create');
 Route::get('ahli-waris', 'AhliWarisController@index');
 Route::post('ahli-waris', 'AhliWarisController@store');

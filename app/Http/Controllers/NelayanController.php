@@ -58,9 +58,9 @@ class NelayanController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Nelayan $nelayan)
     {
-        //
+        return view('nelayan.edit', compact('nelayan'));
     }
 
     /**
@@ -70,9 +70,10 @@ class NelayanController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Nelayan $nelayan)
     {
-        //
+        $nelayan->update($request->all());
+        return back();
     }
 
     /**
