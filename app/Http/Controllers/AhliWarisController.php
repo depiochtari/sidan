@@ -59,9 +59,9 @@ class AhliWarisController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(AhliWaris $ahli_waris)
     {
-        //
+        return view('waris.edit', compact('ahliwaris'));
     }
 
     /**
@@ -71,9 +71,10 @@ class AhliWarisController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, AhliWaris $ahli_waris)
     {
-        //
+        $ahli_waris->update($request->all());
+        return back();
     }
 
     /**

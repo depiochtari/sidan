@@ -59,9 +59,9 @@ class AnakController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Anak $anak)
     {
-        //
+        return view('anak.edit', compact('anak'));
     }
 
     /**
@@ -71,10 +71,11 @@ class AnakController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Anak $anak)
     {
-        //
-    }
+       $anak->update($request->all());
+       return back();    
+   }
 
     /**
      * Remove the specified resource from storage.

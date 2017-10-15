@@ -29,9 +29,15 @@ Route::delete('nelayan/{nelayan}', 'NelayanController@destroy');
 Route::get('ahli-waris/create', 'AhliWarisController@create');
 Route::get('ahli-waris', 'AhliWarisController@index');
 Route::post('ahli-waris', 'AhliWarisController@store');
+Route::get('ahli-waris/{ahli_waris}/edit', 'AhliWarisController@edit');
+Route::put('ahli-waris/{ahli_waris}', 'AhliWarisController@update');
+
 Route::get('anak/create', 'AnakController@create');
 Route::get('anak', 'AnakController@index');
 Route::post('anak', 'AnakController@store');
+Route::get('anak/{anak}/edit', 'AnakController@edit');
+Route::put('anak/{anak}', 'AnakController@update');
+
 Route::get('kub/create', 'KubController@create');
 Route::get('kub', 'KubController@index');
 Route::post('kub', 'KubController@store');

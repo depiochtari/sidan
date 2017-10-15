@@ -33,7 +33,7 @@
                             <td>{{ $ahli_waris->bank }}</td>
                             <td>{{ $ahli_waris->norek }}</td>
                             <td><a href="{{ url('ahli-waris/'.$ahli_waris->id.'/edit') }}">Edit</a></td>
-                            <td><a href="{{ url('ahli-waris/'.$ahli_waris->id) }}">Edit</a></td>
+                            <td><a href="{{ url('ahli-waris/'.$ahli_waris->id) }}">Hapus</a></td>
                         </tr>
 
                         @endforeach
