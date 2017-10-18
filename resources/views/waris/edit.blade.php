@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Edit Data Ahli Waris</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('ahli-waris/'. $ahli-waris->id) }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ url('ahli-waris/'. $ahli_waris->id) }}">
                         {{ csrf_field() }}
                         {{ method_field('PUT') }}
 
@@ -15,7 +15,7 @@
                             <label for="nama" class="col-md-4 control-label">Nama Ahli Waris</label>
 
                             <div class="col-md-6">
-                                <input id="nama" type="text" class="form-control" name="nama" value="{{ $ahli-waris->nama }}">
+                                <input id="nama" type="text" class="form-control" name="nama" value="{{ $ahli_waris->nama }}">
 
                                 @if ($errors->has('nama'))
                                     <span class="help-block">
@@ -29,7 +29,7 @@
                             <label for="suami" class="col-md-4 control-label">Nama Suami</label>
 
                             <div class="col-md-6">
-                                <input id="suami" type="text" class="form-control" name="suami" value="{{ $ahli-waris->suami }}">
+                                <input id="suami" type="text" class="form-control" name="suami" value="{{ $ahli_waris->suami }}">
 
                                 @if ($errors->has('suami'))
                                     <span class="help-block">
@@ -43,7 +43,7 @@
                             <label for="nik" class="col-md-4 control-label">NIK</label>
 
                             <div class="col-md-6">
-                                <input id="nik" type="text" class="form-control" name="nik" value="{{ $ahli-waris->nik }}">
+                                <input id="nik" type="text" class="form-control" name="nik" value="{{ $ahli_waris->nik }}">
 
                                 @if ($errors->has('nik'))
                                     <span class="help-block">
@@ -57,7 +57,7 @@
                             <label for="alamat" class="col-md-4 control-label">Alamat</label>
 
                             <div class="col-md-6">
-                                <input id="alamat" type="text" class="form-control" name="alamat" value="{{ $ahli-waris->alamat }}">
+                                <input id="alamat" type="text" class="form-control" name="alamat" value="{{ $ahli_waris->alamat }}">
 
                                 @if ($errors->has('alamat'))
                                     <span class="help-block">
@@ -71,7 +71,7 @@
                             <label for="status" class="col-md-4 control-label">Status Hubungan</label>
 
                             <div class="col-md-6">
-                                <input id="status" type="text" class="form-control" name="status" value="{{ $ahli-waris->status }}">
+                                <input id="status" type="text" class="form-control" name="status" value="{{ $ahli_waris->status }}">
 
                                 @if ($errors->has('status'))
                                     <span class="help-block">
@@ -85,7 +85,7 @@
                             <label for="hp" class="col-md-4 control-label">HP</label>
 
                             <div class="col-md-6">
-                                <input id="hp" type="text" class="form-control" name="hp" value="{{ $ahli-waris->hp }}">
+                                <input id="hp" type="text" class="form-control" name="hp" value="{{ $ahli_waris->hp }}">
 
                                 @if ($errors->has('hp'))
                                     <span class="help-block">
@@ -99,7 +99,7 @@
                             <label for="bank" class="col-md-4 control-label">BANK</label>
 
                             <div class="col-md-6">
-                                <input id="bank" type="text" class="form-control" name="bank" value="{{ $ahli-waris->bank }}">
+                                <input id="bank" type="text" class="form-control" name="bank" value="{{ $ahli_waris->bank }}">
 
                                 @if ($errors->has('bank'))
                                     <span class="help-block">
@@ -113,7 +113,7 @@
                             <label for="norek" class="col-md-4 control-label">No Rekening</label>
 
                             <div class="col-md-6">
-                                <input id="norek" type="text" class="form-control" name="norek" value="{{ $ahli-waris->norek }}">
+                                <input id="norek" type="text" class="form-control" name="norek" value="{{ $ahli_waris->norek }}">
 
                                 @if ($errors->has('norek'))
                                     <span class="help-block">

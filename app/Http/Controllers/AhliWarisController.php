@@ -61,7 +61,7 @@ class AhliWarisController extends Controller
      */
     public function edit(AhliWaris $ahli_waris)
     {
-        return view('waris.edit', compact('ahliwaris'));
+        return view('waris.edit', compact('ahli_waris'));
     }
 
     /**
