@@ -21,7 +21,13 @@
                             <td>{{ $kub->nama }}</td>
                             <td>{{ $kub->nelayan }}</td>
                             <td><a href="{{ url('kub/'.$kub->id.'/edit') }}">Edit</a></td>
-                            <td><a href="{{ url('kub/'.$kub->id) }}">Hapus</a></td>
+                            <td>
+                                <form action="{{ url('kub/'.$kub->id) }}" method="POST">
+                                    {{ csrf_field() }}
+                                    {{ method_field('DELETE') }}
+                                    <button type="submit" class="btn btn-danger">Hapus</button>
+                                </form>
+                            </td>
                         </tr>
                 </div>
             </div>

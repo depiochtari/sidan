@@ -9,6 +9,11 @@ use App\Kub;
 
 class kubcontroller extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     /**
      * Display a listing of the resource.
      *
@@ -81,8 +86,9 @@ class kubcontroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Kub $kub)
     {
-        //
+        $kub->delete();
+        return back();
     }
 }

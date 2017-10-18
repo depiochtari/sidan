@@ -14,6 +14,9 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ url('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url('css/datatables.min.css') }}">
+    <link rel="stylesheet" href="{{ url('css/responsive.bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url('css/responsive.jqueryui.min.css') }}">
+    <link rel="stylesheet" href="{{ url('css/responsive.dataTables.min.css') }}">
 
     <style>
         body {
@@ -105,6 +108,9 @@
     <script src="{{ url('js/jquery.min.js') }}"></script>
     <script src="{{ url('js/bootstrap.min.js') }}"></script>
     <script src="{{ url('js/datatables.min.js') }}"></script>
+    <script src="{{ url('js/responsive.jqueryui.min.js') }}"></script>
+    <script src="{{ url('js/responsive.bootstrap.min.js') }}"></script>
+    <script src="{{ url('js/dataTables.responsive.min.js') }}"></script>
     <script type="text/javascript">
         $(document).ready( function () {
             $('#datatable').DataTable();

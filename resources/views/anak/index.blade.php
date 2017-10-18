@@ -30,7 +30,13 @@
                             <td>{{ $anak->ibu }}</td>
                             <td>{{ $anak->pendidikan }}</td>
                             <td><a href="{{ url('anak/'.$anak->id.'/edit') }}">Edit</a></td>
-                            <td><a href="{{ url('anak/'.$anak->id) }}">Hapus</a></td>
+                            <td>
+                                <form action="{{ url('anak/'.$anak->id) }}" method="POST">
+                                    {{ csrf_field() }}
+                                    {{ method_field('DELETE') }}
+                                    <button type="submit" class="btn btn-danger">Hapus</button>
+                                </form>
+                            </td>
                         </tr>
                         @endforeach
                     </ol>

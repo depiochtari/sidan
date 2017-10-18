@@ -33,7 +33,13 @@
                             <td>{{ $ahli_waris->bank }}</td>
                             <td>{{ $ahli_waris->norek }}</td>
                             <td><a href="{{ url('ahli-waris/'.$ahli_waris->id.'/edit') }}">Edit</a></td>
-                            <td><a href="{{ url('ahli-waris/'.$ahli_waris->id) }}">Hapus</a></td>
+                            <td>
+                                <form action="{{ url('ahli-waris/'.$ahli_waris->id) }}" method="POST">
+                                    {{ csrf_field() }}
+                                    {{ method_field('DELETE') }}
+                                    <button type="submit" class="btn btn-danger">Hapus</button>
+                                </form>
+                            </td>
                         </tr>
 
                         @endforeach
