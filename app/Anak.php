@@ -8,5 +8,5 @@ class Anak extends Model
 {
     protected $table = 'anak';
 
-    protected $fillable = ['nama'];
+    protected $fillable = ['nama', 'umur', 'alamat', 'saudara', 'ayah', 'ibu', 'pendidikan'];
 }
