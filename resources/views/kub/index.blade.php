@@ -7,11 +7,12 @@
             <div class="panel panel-default">
                 <div class="panel-heading">KUB</div>
                 <div class="panel-body">
-                    <table class="table table-condensed">
+                    <table id="datatable" class="table table-condensed">
                         <tr>
                             <td>ID</td>
                             <td>Nama</td>
                             <td>Nama Nelayan</td>
+                            <td>Alamat</td>
                             <td>Edit</td>
                             <td>Hapus</td>
                         </tr>
@@ -20,6 +21,7 @@
                             <td>{{ $kub->id }}</td>
                             <td>{{ $kub->nama }}</td>
                             <td>{{ $kub->nelayan }}</td>
+                            <td>{{ $kub->alamat }}</td>
                             <td><a href="{{ url('kub/'.$kub->id.'/edit') }}">Edit</a></td>
                             <td>
                                 <form action="{{ url('kub/'.$kub->id) }}" method="POST">
@@ -29,6 +31,7 @@
                                 </form>
                             </td>
                         </tr>
+                        @endforeach
                 </div>
             </div>
         </div

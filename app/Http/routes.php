@@ -47,6 +47,6 @@ Route::get('kub/create', 'KubController@create');
 Route::get('kub', 'KubController@index');
 Route::post('kub', 'KubController@store');
 Route::get('kub/{kub}', 'KubController@show');
-Route::get('kub/{kub}', 'KubController@edit');
+Route::get('kub/{kub}/edit', 'KubController@edit');
 Route::put('kub/{kub}', 'KubController@update');
 Route::delete('kub/{kub}', 'KubController@destroy');

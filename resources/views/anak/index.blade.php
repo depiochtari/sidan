@@ -6,7 +6,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Data Anak</div>
                 <div class="panel-body">
-                   <table class="table table-condensed">
+                   <table id="datatable" class="table table-condensed">
                         <tr>
                             <td>ID</td>
                             <td>Nama</td>

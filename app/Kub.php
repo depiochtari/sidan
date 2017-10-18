@@ -8,5 +8,5 @@ class Kub extends Model
 {
      protected $table = 'kub';
 	
-	protected $fillable = ['nama','nelayan'];
+	protected $fillable = ['nama','nelayan','alamat'];
 }

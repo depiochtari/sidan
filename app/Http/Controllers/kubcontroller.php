@@ -41,9 +41,10 @@ class kubcontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Kub $kub)
     {
-        //
+        $kub->create($request->all());
+        return back();
     }
 
     /**
@@ -63,9 +64,9 @@ class kubcontroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Kub $kub)
     {
-        //
+        return view('kub.edit', compact('kub'));
     }
 
     /**
@@ -75,9 +76,10 @@ class kubcontroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Kub $kub)
     {
-        //
+        $kub->update($request->all());
+        return back();
     }
 
     /**

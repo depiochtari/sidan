@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatKubTable extends Migration
+class CreateKubTable extends Migration
 {
     /**
      * Run the migrations.
@@ -17,6 +17,7 @@ class CreatKubTable extends Migration
             $table->increments('id');
             $table->string('nama');
             $table->string('nelayan');
+            $table->string('alamat');
             $table->timestamps();
         });
     }
