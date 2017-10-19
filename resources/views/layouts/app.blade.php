@@ -46,6 +46,27 @@
                     Sidan
                 </a>
             </div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<table width="100%" border="0">
+  <tr>
+    <td width="10%" height="176"><img src="{{ ('images/logo.png') }}" width="100" height="100" /></td>
+    <td width="80%">
+              <center><p>SISTEM INFORMASI DINAS KELAUTAN DAN PERIKANAN</p>
+                         <p> KABUPATEN KEBUMEN</p>
+                         <p> Jalan Arungbinang No.21 Kebumen</p></center>
+    </td>
+    <td width="10%"><img src="{{ ('images/ikan.png') }}" width="100" height="100" /></td>
+  </tr>
+</table>
+</body>
+</html>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
@@ -66,13 +87,6 @@
                       <ul class="dropdown-menu">
                         <li><a href="{{ url('/ahli-waris') }}">Ahli Waris</a></li>
                         <li><a href="{{ url('/ahli-waris/create') }}">Tambah Ahli Waris</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Anak <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="{{ url('/anak') }}">Anak</a></li>
-                        <li><a href="{{ url('/anak/create') }}">Tambah Data Anak</a></li>
                       </ul>
                     </li>
                     <li class="dropdown">
