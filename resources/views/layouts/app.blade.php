@@ -56,13 +56,13 @@
 <body>
 <table width="100%" border="0">
   <tr>
-    <td width="10%" height="176"><img src="{{ ('images/logo.png') }}" width="100" height="100" /></td>
+    <td width="10%" height="176"><img src="{{ url('images/logo.png') }}" width="100" height="100" /></td>
     <td width="80%">
               <center><p>SISTEM INFORMASI DINAS KELAUTAN DAN PERIKANAN</p>
                          <p> KABUPATEN KEBUMEN</p>
                          <p> Jalan Arungbinang No.21 Kebumen</p></center>
     </td>
-    <td width="10%"><img src="{{ ('images/ikan.png') }}" width="100" height="100" /></td>
+    <td width="10%"><img src="{{ url('images/ikan.png') }}" width="100" height="100" /></td>
   </tr>
 </table>
 </body>
