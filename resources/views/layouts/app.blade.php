@@ -58,7 +58,8 @@
   <tr>
     <td width="10%" height="176"><img src="{{ url('images/logo.png') }}" width="100" height="100" /></td>
     <td width="80%">
-              <center><p>SISTEM INFORMASI DINAS KELAUTAN DAN PERIKANAN</p>
+              <center><p>SISTEM INFORMASI DATA ASURANSI NELAYAN</p>
+                        <p>DINAS KELAUTAN DAN PERIKANAN</p>
                          <p> KABUPATEN KEBUMEN</p>
                          <p> Jalan Arungbinang No.21 Kebumen</p></center>
     </td>
