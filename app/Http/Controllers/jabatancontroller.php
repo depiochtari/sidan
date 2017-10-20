@@ -5,15 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use App\AhliWaris;
 
-class AhliWarisController extends Controller
+class jabatancontroller extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-    
     /**
      * Display a listing of the resource.
      *
@@ -21,8 +15,7 @@ class AhliWarisController extends Controller
      */
     public function index()
     {
-        $dataahli_waris = ahliwaris::all();
-        return view('waris.index', compact('dataahli_waris'));
+        //
     }
 
     /**
@@ -32,7 +25,7 @@ class AhliWarisController extends Controller
      */
     public function create()
     {
-        return view('waris.create');
+        //
     }
 
     /**
@@ -41,10 +34,9 @@ class AhliWarisController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, AhliWaris $ahli_waris)
+    public function store(Request $request)
     {
-        $ahli_waris->create($request->all());
-        return back();
+        //
     }
 
     /**
@@ -53,10 +45,9 @@ class AhliWarisController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(AhliWaris $ahli_waris)
+    public function show($id)
     {
-        $ahli_waris->report($request->all());
-        return back();
+        //
     }
 
     /**
@@ -65,9 +56,9 @@ class AhliWarisController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(AhliWaris $ahli_waris)
+    public function edit($id)
     {
-        return view('waris.edit', compact('ahli_waris'));
+        //
     }
 
     /**
@@ -77,10 +68,9 @@ class AhliWarisController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, AhliWaris $ahli_waris)
+    public function update(Request $request, $id)
     {
-        $ahli_waris->update($request->all());
-        return back();
+        //
     }
 
     /**
@@ -89,9 +79,8 @@ class AhliWarisController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(AhliWaris $ahli_waris)
+    public function destroy($id)
     {
-        $ahli_waris->delete();
-        return back();
+        //
     }
 }

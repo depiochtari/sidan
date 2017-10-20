@@ -26,6 +26,7 @@ Route::get('nelayan/{nelayan}', 'NelayanController@show');
 Route::get('nelayan/{nelayan}/edit', 'NelayanController@edit');
 Route::put('nelayan/{nelayan}', 'NelayanController@update');
 Route::delete('nelayan/{nelayan}', 'NelayanController@destroy');
+Route::get('nelayan/{nelayan}', 'NelayanController@show');
 
 Route::get('ahli-waris/create', 'AhliWarisController@create');
 Route::get('ahli-waris', 'AhliWarisController@index');
@@ -34,6 +35,7 @@ Route::get('ahli-waris/{ahli_waris}', 'AhliWarisController@show');
 Route::get('ahli-waris/{ahli_waris}/edit', 'AhliWarisController@edit');
 Route::put('ahli-waris/{ahli_waris}', 'AhliWarisController@update');
 Route::delete('ahli-waris/{ahli_waris}', 'AhliWarisController@destroy');
+Route::get('ahli-waris/{ahli_waris}', 'AhliWarisController@show');
 
 Route::get('anak/create', 'AnakController@create');
 Route::get('anak', 'AnakController@index');
