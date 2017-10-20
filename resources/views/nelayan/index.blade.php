@@ -15,10 +15,10 @@
                                 <td>Nama</td>
                                 <td>Alamat</td>
                                 <td>Status</td>
-                                <td>KUB</td>
-                                <td>HP</td>
-                                <td>BANK</td>
-                                <td>No Rekening</td>
+                                <td>Nik</td>
+                                <td>Kecamatan</td>
+                                <td>Desa</td>
+                                <td>Tahun</td>
                                 <td>Edit</td>
                                 <td>Hapus</td>
                             </tr>
@@ -31,10 +31,10 @@
                                     <td>{{ $nelayan->nama }}</td>
                                     <td>{{ $nelayan->alamat }}</td>
                                     <td>{{ $nelayan->status }}</td>
-                                    <td>{{ $nelayan->kub }}</td>
-                                    <td>{{ $nelayan->hp }}</td>
-                                    <td>{{ $nelayan->bank }}</td>
-                                    <td>{{ $nelayan->norek }}</td>
+                                    <td>{{ $nelayan->nik }}</td>
+                                    <td>{{ $nelayan->kecamatan }}</td>
+                                    <td>{{ $nelayan->desa }}</td>
+                                    <td>{{ $nelayan->tahun }}</td>
                                     <td><a href="{{ url('nelayan/'.$nelayan->id.'/edit') }}">Edit</a></td>
                                     <td>
                                         <form action="{{ url('nelayan/'.$nelayan->id) }}" method="POST">

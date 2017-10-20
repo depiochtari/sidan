@@ -8,5 +8,5 @@ class Nelayan extends Model
 {
     protected $table = 'nelayan';
 	
-	protected $fillable = ['nama','alamat', 'status', 'kn', 'kub', 'hp', 'bank', 'norek'];
+	protected $fillable = ['nama','alamat', 'status', 'kn', 'nik', 'kecamatan', 'desa', 'tahun'];
 }

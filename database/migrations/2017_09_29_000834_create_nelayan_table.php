@@ -18,10 +18,10 @@ class CreateNelayanTable extends Migration
             $table->string('nama');
 			$table->string('alamat');
             $table->string('status');
-            $table->string('kub');
-            $table->string('hp');
-            $table->string('bank');
-            $table->string('norek');
+            $table->string('nik');
+            $table->string('kecamatan');
+            $table->string('desa');
+            $table->string('tahun');
 			$table->timestamps();
         });
     }
