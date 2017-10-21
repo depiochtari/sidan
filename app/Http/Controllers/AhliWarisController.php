@@ -34,7 +34,7 @@ class AhliWarisController extends Controller
      */
     public function create()
     {
-        $data_nelayan = Nelayan::all();
+        $datanelayan = Nelayan::all();
         return view('waris.create', compact('datanelayan'));
     }
 
@@ -104,6 +104,6 @@ class AhliWarisController extends Controller
     public function report()
     {
         $data_waris = AhliWaris::all();
-        return view('waris.report', compact('data_waris','data_nelayan' ));
+        return view('waris.report', compact('data_waris','datanelayan' ));
     }
 }
