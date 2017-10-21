@@ -22,6 +22,7 @@ class AhliWarisController extends Controller
     public function index()
     {
         $dataahli_waris = ahliwaris::all();
+        $dataahli_waris->load('nelayan');
         return view('waris.index', compact('dataahli_waris'));
     }
 
@@ -32,7 +33,8 @@ class AhliWarisController extends Controller
      */
     public function create()
     {
-        return view('waris.create');
+        $data_nelayan = Nelayan::all();
+        return view('waris.create', compact('data_nelayan'));
     }
 
     /**
@@ -55,8 +57,9 @@ class AhliWarisController extends Controller
      */
     public function show(AhliWaris $ahli_waris)
     {
-        $ahli_waris->report($request->all());
-        return back();
+        // $ahli_waris->report($request->all());
+        // return back();
+        return view('waris.show', compact('ahli_waris'));
     }
 
     /**
@@ -67,7 +70,8 @@ class AhliWarisController extends Controller
      */
     public function edit(AhliWaris $ahli_waris)
     {
-        return view('waris.edit', compact('ahli_waris'));
+        $data_nelayan = Nelayan::all();
+        return view('waris.edit', compact('ahli_waris', 'data_nelayan'));
     }
 
     /**
@@ -93,5 +97,12 @@ class AhliWarisController extends Controller
     {
         $ahli_waris->delete();
         return back();
+    }
+
+
+    public function report()
+    {
+        $data_waris = AhliWaris::all();
+        return view('waris.report', compact('data_waris'));
     }
 }

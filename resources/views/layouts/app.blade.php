@@ -80,6 +80,7 @@
                       <ul class="dropdown-menu">
                         <li><a href="{{ url('/ahli-waris') }}">Ahli Waris</a></li>
                         <li><a href="{{ url('/ahli-waris/create') }}">Tambah Ahli Waris</a></li>
+                        <li><a href="{{ url('/ahli-waris/report') }}">Laporan Ahli Waris</a></li>
                       </ul>
                     </li>
                     <li class="dropdown">

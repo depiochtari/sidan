@@ -12,8 +12,12 @@ class CreateStrukturTable extends Migration
      */
     public function up()
     {
-        Schema::table('struktur', function (Blueprint $table) {
-            //
+        Schema::create('pegawai', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('pegawai_id')->unsigned();
+            $table->string('posisi');
+            $table->string('photo');
+            $table->timestamps();
         });
     }
 
@@ -24,8 +28,6 @@ class CreateStrukturTable extends Migration
      */
     public function down()
     {
-        Schema::table('struktur', function (Blueprint $table) {
-            //
-        });
+        Schema::drop('struktur');
     }
 }

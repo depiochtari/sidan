@@ -12,8 +12,13 @@ class CreatePegawaiTable extends Migration
      */
     public function up()
     {
-        Schema::table('pegawai', function (Blueprint $table) {
-            //
+        Schema::create('pegawai', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('jabatan_id')->unsigned();
+            $table->string('nama');
+            $table->string('alamat');
+            $table->string('hp');
+            $table->timestamps();
         });
     }
 
@@ -24,8 +29,6 @@ class CreatePegawaiTable extends Migration
      */
     public function down()
     {
-        Schema::table('pegawai', function (Blueprint $table) {
-            //
-        });
+        Schema::drop('pegawai');
     }
 }

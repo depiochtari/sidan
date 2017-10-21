@@ -31,6 +31,7 @@ Route::get('nelayan/{nelayan}', 'NelayanController@show');
 Route::get('ahli-waris/create', 'AhliWarisController@create');
 Route::get('ahli-waris', 'AhliWarisController@index');
 Route::post('ahli-waris', 'AhliWarisController@store');
+Route::get('ahli-waris/report', 'AhliWarisController@report');
 Route::get('ahli-waris/{ahli_waris}', 'AhliWarisController@show');
 Route::get('ahli-waris/{ahli_waris}/edit', 'AhliWarisController@edit');
 Route::put('ahli-waris/{ahli_waris}', 'AhliWarisController@update');

@@ -14,6 +14,7 @@ class CreateAhliWarisTable extends Migration
     {
         Schema::create('ahli_waris', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('nelayan_id')->unsigned();
             $table->string('nama');
             $table->string('suami');
             $table->string('nik');

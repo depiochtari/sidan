@@ -12,8 +12,10 @@ class CreateJabatanTable extends Migration
      */
     public function up()
     {
-        Schema::table('jabatan', function (Blueprint $table) {
-            //
+        Schema::create('jabatan', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('jabatan');
+            $table->timestamps();
         });
     }
 
@@ -24,8 +26,6 @@ class CreateJabatanTable extends Migration
      */
     public function down()
     {
-        Schema::table('jabatan', function (Blueprint $table) {
-            //
-        });
+        Schema::drop('jabatan');
     }
 }

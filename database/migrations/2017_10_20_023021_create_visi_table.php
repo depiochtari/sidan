@@ -12,8 +12,10 @@ class CreateVisiTable extends Migration
      */
     public function up()
     {
-        Schema::table('visi', function (Blueprint $table) {
-            //
+        Schema::create('visi', function (Blueprint $table) {
+            $table->increments('id');
+            $table->text('visi');
+            $table->timestamps();
         });
     }
 
@@ -24,8 +26,6 @@ class CreateVisiTable extends Migration
      */
     public function down()
     {
-        Schema::table('visi', function (Blueprint $table) {
-            //
-        });
+        Schema::drop('visi');
     }
 }

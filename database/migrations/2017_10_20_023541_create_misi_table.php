@@ -12,8 +12,10 @@ class CreateMisiTable extends Migration
      */
     public function up()
     {
-        Schema::table('misi', function (Blueprint $table) {
-            //
+        Schema::create('misi', function (Blueprint $table) {
+            $table->increments('id');
+            $table->text('misi');
+            $table->timestamps();
         });
     }
 
@@ -24,8 +26,6 @@ class CreateMisiTable extends Migration
      */
     public function down()
     {
-        Schema::table('misi', function (Blueprint $table) {
-            //
-        });
+        Schema::drop('misi');
     }
 }
