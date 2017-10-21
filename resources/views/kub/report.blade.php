@@ -19,22 +19,17 @@
                 <thead>
                     <th>
                         <td>ID</td>
-                        <td>KN</td>
-                        <td>Nama</td>
-                        <td>Alamat</td>
-                        <td>Status</td>
-                        <td>Nik</td>
-                        <td>Kecamatan</td>
-                        <td>Desa</td>
-                        <td>Tahun</td>
-                        <td>Nama Ahli Waris</td>
-                        <td>Nama Suami</td>
-                        <td>NIK</td>
-                        <td>Alamat</td>
-                        <td>Status Hubungan</td>
-                        <td>HP</td>
-                        <td>BANK</td>
-                        <td>No Rekening</td>
+                                <td>Nama</td>
+                                <td>Nama Nelayan</td>
+                                <td>Alamat</td>
+                                <td>KN</td>
+                                <td>Nama</td>
+                                <td>Alamat</td>
+                                <td>Status</td>
+                                <td>Nik</td>
+                                <td>Kecamatan</td>
+                                <td>Desa</td>
+                                <td>Tahun</td>
                     </th>
                 </thead>
                 <tbody>

@@ -22,9 +22,9 @@ class AhliWarisController extends Controller
      */
     public function index()
     {
-        $dataahli_waris = ahliwaris::all();
-        $dataahli_waris->load('nelayan');
-        return view('waris.index', compact('dataahli_waris'));
+        $data_waris = ahliwaris::all();
+        $data_waris->load('nelayan');
+        return view('waris.index', compact('data_waris'));
     }
 
     /**
@@ -58,8 +58,8 @@ class AhliWarisController extends Controller
      */
     public function show(AhliWaris $ahli_waris)
     {
-        // $ahli_waris->report($request->all());
-        // return back();
+         $ahli_waris->report($request->all());
+         return back();
         return view('waris.show', compact('ahli_waris'));
     }
 

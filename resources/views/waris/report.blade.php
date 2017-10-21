@@ -51,6 +51,14 @@
                             <td>{{ $ahli_waris->hp }}</td>
                             <td>{{ $ahli_waris->bank }}</td>
                             <td>{{ $ahli_waris->norek }}</td>
+                            <td>{{ $ahli_waris->nelayan->kn }}</td>
+                            <td>{{ $ahli_waris->nelayan->nama }}</td>
+                            <td>{{ $ahli_waris->nelayan->alamat }}</td>
+                            <td>{{ $ahli_waris->nelayan->status }}</td>
+                            <td>{{ $ahli_waris->nelayan->nik }}</td>
+                            <td>{{ $ahli_waris->nelayan->kecamatan }}</td>
+                            <td>{{ $ahli_waris->nelayan->desa }}</td>
+                            <td>{{ $ahli_waris->nelayan->tahun }}</td>
                             <td><Edit</td>
                             <td><Hapus</td>
                         </tr>
