@@ -17,7 +17,7 @@
             </table>
             <table id="datatable" class="table table-condensed">
                 <thead>
-                    <tr>
+                    <th>
                         <td>ID</td>
                         <td>KN</td>
                         <td>Nama</td>
@@ -35,7 +35,7 @@
                         <td>HP</td>
                         <td>BANK</td>
                         <td>No Rekening</td>
-                    </tr>
+                    </th>
                 </thead>
                 <tbody>
                     @foreach($datakub as $kub)
