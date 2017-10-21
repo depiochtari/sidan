@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Nelayan;
-use App\Kub;
+use App\Ahliwaris;
 
 class NelayanController extends Controller
 {
@@ -23,7 +23,7 @@ class NelayanController extends Controller
     public function index()
     {
         $datanelayan = Nelayan::all();
-        $datanelayan ->load('kub');
+        $datanelayan ->load('ahli_waris');
 		return view('nelayan.index', compact('datanelayan'));
     }
 
@@ -34,7 +34,7 @@ class NelayanController extends Controller
      */
     public function create()
     {
-        $datakub = Kub::all();
+        $dataahli_waris = Ahliwaris::all();
         return view('nelayan.create');
     }
 
@@ -72,7 +72,7 @@ class NelayanController extends Controller
     public function edit(Nelayan $nelayan)
     {
         $datanelayan = Nelayan::all();
-        return view('nelayan.edit', compact('nelayan','datakub'));
+        return view('nelayan.edit', compact('nelayan','dataahli_waris'));
     }
 
     /**
@@ -103,6 +103,6 @@ class NelayanController extends Controller
      public function report()
     {
         $datanelayan = Nelayan::all();
-        return view('nelayan.report', compact('datanelayan','datakub' ));
+        return view('nelayan.report', compact('datanelayan','dataahli_waris' ));
     }
 }

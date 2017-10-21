@@ -54,7 +54,6 @@
                             <td><Edit</td>
                             <td><Hapus</td>
                         </tr>
-
                     @endforeach
                 </tbody>
             </table>
