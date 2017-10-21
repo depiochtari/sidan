@@ -60,7 +60,7 @@ class kubcontroller extends Controller
     {
         $kub->report($nelayan->all());
          return back();
-        return view('kub.show'), compact('kub'));
+        return view('kub.show', compact('kub'));
     }
 
     /**
@@ -72,7 +72,7 @@ class kubcontroller extends Controller
     public function edit(Kub $kub)
     {
         $data_nelayan = Nelayan::all();
-        return view('kub.edit'), compact('kub', 'datanelayan'));
+        return view('kub.edit', compact('kub', 'datanelayan'));
     }
 
     /**
@@ -103,6 +103,6 @@ class kubcontroller extends Controller
         public function report()
     {
         $datakub = Kub::all();
-        return view('kub.report'), compact('datakub','datanelayan' ));
+        return view('kub.report', compact('datakub','datanelayan' ));
     }
 }
