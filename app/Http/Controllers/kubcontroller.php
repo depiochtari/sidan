@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Kub;
+use App\nelayan;
 
 class kubcontroller extends Controller
 {
@@ -22,6 +23,7 @@ class kubcontroller extends Controller
     public function index()
     {
         $datakub = kub::all();
+        $datakub->load('nelayan');
         return view('kub.index', compact('datakub'));
     }
 
@@ -32,7 +34,8 @@ class kubcontroller extends Controller
      */
     public function create()
     {
-        return view('kub.create');
+        $data_nelayan = Nelayan::all();
+        return view('kub.create', compact('datanelayan'));
     }
 
     /**
@@ -55,7 +58,8 @@ class kubcontroller extends Controller
      */
     public function show(Kub $kub)
     {
-        $kub->load('nelayan');
+        $kub->report($nelayan->all());
+         return back();
         return view('kub.show', compact('kub'));
     }
 
@@ -67,7 +71,8 @@ class kubcontroller extends Controller
      */
     public function edit(Kub $kub)
     {
-        return view('kub.edit', compact('kub'));
+        $data_nelayan = Nelayan::all();
+        return view('kub.edit', compact('kub', 'datanelayan'));
     }
 
     /**
@@ -93,5 +98,11 @@ class kubcontroller extends Controller
     {
         $kub->delete();
         return back();
+    }
+
+        public function report()
+    {
+        $datakub = Kub::all();
+        return view('kub.report', compact('datakub','datanelayan' ));
     }
 }

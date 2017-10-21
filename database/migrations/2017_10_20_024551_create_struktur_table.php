@@ -12,7 +12,7 @@ class CreateStrukturTable extends Migration
      */
     public function up()
     {
-        Schema::create('pegawai', function (Blueprint $table) {
+        Schema::create('struktur', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('pegawai_id')->unsigned();
             $table->string('posisi');

@@ -38,9 +38,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($datanelayan as $nelayan)
+                    @foreach($datakub as $kub)
                         <tr>
-                            <td>{{ $ahli_waris->id }}</td>
+                            <td>{{ $kub->id }}</td>
                             <td>{{ $nelayan->kn }}</td>
                             <td>{{ $nelayan->nama }}</td>
                             <td>{{ $nelayan->alamat }}</td>
@@ -49,14 +49,8 @@
                             <td>{{ $nelayan->kecamatan }}</td>
                             <td>{{ $nelayan->desa }}</td>
                             <td>{{ $nelayan->tahun }}</td>
-                            <td>{{ $nelayan->ahli_waris->nama }}</td>
-                            <td>{{ $nelayan->ahli_waris->suami }}</td>
-                            <td>{{ $nelayan->ahli_waris->nik }}</td>
-                            <td>{{ $nelayan->ahli_waris->alamat }}</td>
-                            <td>{{ $nelayan->ahli_waris->status }}</td>
-                            <td>{{ $nelayan->ahli_waris->hp }}</td>
-                            <td>{{ $nelayan->ahli_waris->bank }}</td>
-                            <td>{{ $nelayan->ahli_waris->norek }}</td>
+                            <td>{{ $nelayan->kub->nama }}</td>
+                            <td>{{ $nelayan->kub->alamat }}</td>
                             <td><a href="{{ url('ahli-waris/'.$ahli_waris->id.'/edit') }}">Edit</a></td>
                             <td>
                                 <form action="{{ url('ahli-waris/'.$ahli_waris->id) }}" method="POST">

@@ -8,10 +8,10 @@ class Kub extends Model
 {
     protected $table = 'kub';
 	
-	protected $fillable = ['nama','nelayan','alamat'];
+	protected $fillable = ['nama','nelayan','alamat', 'nelayan_id'];
 
     public function nelayan()
     {
-        return $this->hasMany(Nelayan::class);
+        return $this->belongsTo(Nelayan::class, 'nelayan_id');
     }
 }

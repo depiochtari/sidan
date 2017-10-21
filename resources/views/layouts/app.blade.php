@@ -89,6 +89,7 @@
                       <ul class="dropdown-menu">
                         <li><a href="{{ url('/kub') }}">KUB</a></li>
                         <li><a href="{{ url('/kub/create') }}">Tambah KUB</a></li>
+                        <li><a href="{{ url('/kub/report') }}">Laporan KUB</a></li>
                       </ul>
                     </li>
                     <!-- Authentication Links -->

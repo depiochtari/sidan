@@ -22,6 +22,7 @@ class NelayanController extends Controller
     public function index()
     {
         $datanelayan = Nelayan::all();
+        $datanelayan ->load('kub');
 		return view('nelayan.index', compact('datanelayan'));
     }
 
