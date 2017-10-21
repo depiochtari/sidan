@@ -47,8 +47,6 @@
                             <td>{{ $kub-.nelayan->kecamatan }}</td>
                             <td>{{ $kub-.nelayan->desa }}</td>
                             <td>{{ $kub-.nelayan->tahun }}</td>
-                            <td>{{ $kub-.nelayan->kub->nama }}</td>
-                            <td>{{ $kub-.nelayan->kub->alamat }}</td>
                             <td><a href="{{ url('kub/'.$kub->id.'/edit') }}">Edit</a></td>
                             <td>
                                 <form action="{{ url('kub/'.$kub->id) }}" method="POST">
