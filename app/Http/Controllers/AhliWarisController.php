@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\AhliWaris;
+use App\Nelayan;
 
 class AhliWarisController extends Controller
 {
@@ -103,6 +104,6 @@ class AhliWarisController extends Controller
     public function report()
     {
         $data_waris = AhliWaris::all();
-        return view('waris.report', compact('data_waris'));
+        return view('waris.report', compact('data_waris','data_nelayan' ));
     }
 }

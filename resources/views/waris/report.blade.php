@@ -5,14 +5,14 @@
         <div class="col-md-8 col-md-offset-2">
             <table>
                 <tr>
-                    <td>Gambar</td>
-                    <td>
-                        <p>Header1</p>
-                        <p>Header2</p>
-                        <p>Header3</p>
-                        <p>Header4</p>
+                    <td width="10%" height="176"><img src="{{ url('images/logo.png') }}" width="100" height="100" /></td>
+                    <td width="80%">
+                    <center><p>SISTEM INFORMASI DATA ASURANSI NELAYAN</p>
+                        <p>DINAS KELAUTAN DAN PERIKANAN</p>
+                        <p>KABUPATEN KEBUMEN</p>
+                        <p>alan Arungbinang No.21 Kebumen</p></center>
                     </td>
-                    <td>Gambar</td>
+                    <td width="10%"><img src="{{ url('images/ikan.png') }}" width="100" height="100" /></td>
                 </tr>
             </table>
             <table id="datatable" class="table table-condensed">
@@ -27,8 +27,16 @@
                         <td>HP</td>
                         <td>BANK</td>
                         <td>No Rekening</td>
-                        <td>Edit</td>
-                        <td>Hapus</td>
+                        <td>KN</td>
+                        <td>Nama</td>
+                        <td>Alamat</td>
+                        <td>Status</td>
+                        <td>Nik</td>
+                        <td>Kecamatan</td>
+                        <td>Desa</td>
+                        <td>Tahun</td>
+                        <td><Edit</td>
+                        <td><Hapus</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -43,14 +51,8 @@
                             <td>{{ $ahli_waris->hp }}</td>
                             <td>{{ $ahli_waris->bank }}</td>
                             <td>{{ $ahli_waris->norek }}</td>
-                            <td><a href="{{ url('ahli-waris/'.$ahli_waris->id.'/edit') }}">Edit</a></td>
-                            <td>
-                                <form action="{{ url('ahli-waris/'.$ahli_waris->id) }}" method="POST">
-                                    {{ csrf_field() }}
-                                    {{ method_field('DELETE') }}
-                                    <button type="submit" class="btn btn-danger">Hapus</button>
-                                </form>
-                            </td>
+                            <td><Edit</td>
+                            <td><Hapus</td>
                         </tr>
 
                     @endforeach

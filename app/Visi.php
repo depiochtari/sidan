@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Visi extends Model
 {
-    protected $table = 'misi';
+    protected $table = 'visi';
 
-    protected $fillable = ['misi'];
+    protected $fillable = ['visi'];
 }

@@ -73,6 +73,7 @@
                       <ul class="dropdown-menu">
 					    <li><a href="{{ url('/nelayan') }}">Nelayan</a></li>
 					    <li><a href="{{ url('/nelayan/create') }}">Tambah Nelayan</a></li>
+                        <li><a href="{{ url('/nelayan/report') }}">Laporan Nelayan</a></li>
                       </ul>
                     </li>
                     <li class="dropdown">
