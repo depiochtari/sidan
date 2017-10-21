@@ -19,36 +19,39 @@
                 <thead>
                     <th>
                         <td>ID</td>
-                                <td>Nama</td>
-                                <td>Nama Nelayan</td>
-                                <td>Alamat</td>
-                                <td>KN</td>
-                                <td>Nama</td>
-                                <td>Alamat</td>
-                                <td>Status</td>
-                                <td>Nik</td>
-                                <td>Kecamatan</td>
-                                <td>Desa</td>
-                                <td>Tahun</td>
+                        <td>Nama</td>
+                        <td>Nama Nelayan</td>
+                        <td>Alamat</td>
+                        <td>KN</td>
+                        <td>Nama</td>
+                        <td>Alamat</td>
+                        <td>Status</td>
+                        <td>Nik</td>
+                        <td>Kecamatan</td>
+                        <td>Desa</td>
+                        <td>Tahun</td>
                     </th>
                 </thead>
                 <tbody>
                     @foreach($datakub as $kub)
                         <tr>
                             <td>{{ $kub->id }}</td>
-                            <td>{{ $nelayan->kn }}</td>
-                            <td>{{ $nelayan->nama }}</td>
-                            <td>{{ $nelayan->alamat }}</td>
-                            <td>{{ $nelayan->status }}</td>
-                            <td>{{ $nelayan->nik }}</td>
-                            <td>{{ $nelayan->kecamatan }}</td>
-                            <td>{{ $nelayan->desa }}</td>
-                            <td>{{ $nelayan->tahun }}</td>
-                            <td>{{ $nelayan->kub->nama }}</td>
-                            <td>{{ $nelayan->kub->alamat }}</td>
-                            <td><a href="{{ url('ahli-waris/'.$ahli_waris->id.'/edit') }}">Edit</a></td>
+                            <td>{{ $kub->nama }}</td>
+                            <td>{{ $kub->nelayan }}</td>
+                            <td>{{ $kub->alamat}}</td>
+                            <td>{{ $kub->nelayan->kn }}</td>
+                            <td>{{ $kub-.nelayan->nama }}</td>
+                            <td>{{ $kub-.nelayan->alamat }}</td>
+                            <td>{{ $kub-.nelayan->status }}</td>
+                            <td>{{ $kub-.nelayan->nik }}</td>
+                            <td>{{ $kub-.nelayan->kecamatan }}</td>
+                            <td>{{ $kub-.nelayan->desa }}</td>
+                            <td>{{ $kub-.nelayan->tahun }}</td>
+                            <td>{{ $kub-.nelayan->kub->nama }}</td>
+                            <td>{{ $kub-.nelayan->kub->alamat }}</td>
+                            <td><a href="{{ url('kub/'.$kub->id.'/edit') }}">Edit</a></td>
                             <td>
-                                <form action="{{ url('ahli-waris/'.$ahli_waris->id) }}" method="POST">
+                                <form action="{{ url('kub/'.$kub->id) }}" method="POST">
                                     {{ csrf_field() }}
                                     {{ method_field('DELETE') }}
                                     <button type="submit" class="btn btn-danger">Hapus</button>
