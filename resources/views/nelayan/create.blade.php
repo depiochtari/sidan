@@ -9,7 +9,22 @@
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/nelayan') }}">
                         {{ csrf_field() }}
+                        <div class="form-group{{ $errors->has('kub_id') ? ' has-error' : '' }}">
+                            <label for="kub_id" class="col-md-4 control-label">Nelayan</label>
+                            <div class="col-md-6">
+                                <select name="kub_id" id="kub_id" class="form-control">
+                                    @foreach($data_kub as $kub)
+                                        <option value="{{ $kub->id }}">{{ $kub->nama }}</option>
+                                    @endforeach
+                                </select>
 
+                                @if ($errors->has('kub_id'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('kub_id') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
                          <div class="form-group{{ $errors->has('kn') ? ' has-error' : '' }}">
                             <label for="kn" class="col-md-4 control-label">KN</label>
                             <div class="col-md-6">

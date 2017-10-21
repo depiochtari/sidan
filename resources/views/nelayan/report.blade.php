@@ -39,7 +39,6 @@
                 </thead>
                 <tbody>
                     @foreach($datanelayan as $nelayan)
-                    @foreach($data_waris as $ahli_waris)
                         <tr>
                             <td>{{ $ahli_waris->id }}</td>
                             <td>{{ $nelayan->kn }}</td>
@@ -50,14 +49,14 @@
                             <td>{{ $nelayan->kecamatan }}</td>
                             <td>{{ $nelayan->desa }}</td>
                             <td>{{ $nelayan->tahun }}</td>
-                            <td>{{ $ahli_waris->nama }}</td>
-                            <td>{{ $ahli_waris->suami }}</td>
-                            <td>{{ $ahli_waris->nik }}</td>
-                            <td>{{ $ahli_waris->alamat }}</td>
-                            <td>{{ $ahli_waris->status }}</td>
-                            <td>{{ $ahli_waris->hp }}</td>
-                            <td>{{ $ahli_waris->bank }}</td>
-                            <td>{{ $ahli_waris->norek }}</td>
+                            <td>{{ $nelayan->ahliwaris->nama }}</td>
+                            <td>{{ $nelayan->ahliwaris->suami }}</td>
+                            <td>{{ $nelayan->ahliwaris->nik }}</td>
+                            <td>{{ $nelayan->ahliwaris->alamat }}</td>
+                            <td>{{ $nelayan->ahliwaris->status }}</td>
+                            <td>{{ $nelayan->ahliwaris->hp }}</td>
+                            <td>{{ $nelayan->ahliwaris->bank }}</td>
+                            <td>{{ $nelayan->ahliwaris->norek }}</td>
                             <td><a href="{{ url('ahli-waris/'.$ahli_waris->id.'/edit') }}">Edit</a></td>
                             <td>
                                 <form action="{{ url('ahli-waris/'.$ahli_waris->id) }}" method="POST">
@@ -67,7 +66,6 @@
                                 </form>
                             </td>
                         </tr>
-                    @enddforeach
                     @endforeach
                 </tbody>
             </table>

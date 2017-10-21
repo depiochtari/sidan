@@ -53,9 +53,10 @@ class kubcontroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Kub $kub)
     {
-        //
+        $kub->load('nelayan');
+        return view('kub.show', compact('kub'));
     }
 
     /**

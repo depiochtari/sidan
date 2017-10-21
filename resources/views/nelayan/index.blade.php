@@ -9,7 +9,7 @@
                 <div class="panel-body">
                     <table id="datatable" class="table table-condensed">
                         <thead>
-                            <tr>
+                            <th>
                                 <td>ID</td>
                                 <td>KN</td>
                                 <td>Nama</td>
@@ -21,7 +21,7 @@
                                 <td>Tahun</td>
                                 <td>Edit</td>
                                 <td>Hapus</td>
-                            </tr>
+                            </th>
                         </thead>
                         <tbody>
                             @foreach($datanelayan as $nelayan)
