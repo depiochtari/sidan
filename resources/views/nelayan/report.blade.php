@@ -55,14 +55,8 @@
                             <td>{{ $nelayan->ahliwaris->hp }}</td>
                             <td>{{ $nelayan->kub->nama }}</td>
                             <td>{{ $nelayan->kub->alamat }}</td>
-                            <td><a href="{{ url('nelayan/'.$nelayan->id.'/edit') }}">Edit</a></td>
-                            <td>
-                                <form action="{{ url('nelayan/'.$nelayan->id) }}" method="POST">
-                                    {{ csrf_field() }}
-                                    {{ method_field('DELETE') }}
-                                    <button type="submit" class="btn btn-danger">Hapus</button>
-                                </form>
-                            </td>
+                            <td><Edit</td>
+                            <td><Hapus</td>
                         </tr>
                     @endforeach
                 </tbody>
