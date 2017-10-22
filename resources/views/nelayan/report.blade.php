@@ -28,7 +28,6 @@
                         <td>Desa</td>
                         <td>Tahun</td>
                         <td>Nama Ahli Waris</td>
-                        <td>Nama Suami</td>
                         <td>NIK</td>
                         <td>Alamat</td>
                         <td>Status Hubungan</td>
@@ -48,13 +47,11 @@
                             <td>{{ $nelayan->desa }}</td>
                             <td>{{ $nelayan->tahun }}</td>
                             <td>{{ $nelayan->ahli_waris->nama }}</td>
-                            <td>{{ $nelayan->ahli_waris->suami }}</td>
                             <td>{{ $nelayan->ahli_waris->nik }}</td>
                             <td>{{ $nelayan->ahli_waris->alamat }}</td>
                             <td>{{ $nelayan->ahli_waris->status }}</td>
                             <td>{{ $nelayan->ahli_waris->hp }}</td>
                             <td>{{ $nelayan->kub->nama }}</td>
-                            <td>{{ $nelayan->kub->nelayan }}</td>
                             <td>{{ $nelayan->kub->alamat }}</td>
                             <td><a href="{{ url('ahli-waris/'.$ahli_waris->id.'/edit') }}">Edit</a></td>
                             <td>

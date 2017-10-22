@@ -103,6 +103,6 @@ class kubcontroller extends Controller
         public function report()
     {
         $data_kub = Kub::all();
-        return view('kub.report', compact('datakub'));
+        return view('kub.report', compact('data_kub'));
     }
 }
