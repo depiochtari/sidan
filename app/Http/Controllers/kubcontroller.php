@@ -22,8 +22,8 @@ class kubcontroller extends Controller
      */
     public function index()
     {
-        $datakub = kub::all();
-        $datakub->load('nelayan');
+        $data_kub = kub::all();
+        $data_kub->load('nelayan');
         return view('kub.index', compact('datakub'));
     }
 
@@ -71,7 +71,7 @@ class kubcontroller extends Controller
      */
     public function edit(Kub $kub)
     {
-        $data_nelayan = Nelayan::all();
+        $datanelayan = Nelayan::all();
         return view('kub.edit', compact('kub', 'datanelayan'));
     }
 
@@ -102,7 +102,7 @@ class kubcontroller extends Controller
 
         public function report()
     {
-        $datakub = Kub::all();
-        return view('kub.report', compact('datakub','datanelayan' ));
+        $data_kub = Kub::all();
+        return view('kub.report', compact('datakub'));
     }
 }

@@ -24,7 +24,8 @@ class NelayanController extends Controller
     public function index()
     {
         $datanelayan = Nelayan::all();
-        $datanelayan ->load('ahliwaris');
+        $datanelayan ->load('ahli_waris');
+        $datanelayan ->load('kub');
 		return view('nelayan.index', compact('datanelayan'));
     }
 
@@ -35,8 +36,9 @@ class NelayanController extends Controller
      */
     public function create()
     {
-        $data_kub = Kub::all();
-        return view('nelayan.create', compact('data_kub'));
+        $datakub = Kub::all();
+        $data_waris = ahliwaris::all();
+        return view('nelayan.create', compact('data_kub', 'data_waris'));
     }
 
     /**
@@ -73,7 +75,7 @@ class NelayanController extends Controller
     public function edit(Nelayan $nelayan)
     {
         $datanelayan = Nelayan::all();
-        return view('nelayan.edit', compact('nelayan','dataahli_waris'));
+        return view('nelayan.edit', compact('nelayan','ahli_waris', 'kub'));
     }
 
     /**
@@ -104,6 +106,6 @@ class NelayanController extends Controller
      public function report()
     {
         $datanelayan = Nelayan::all();
-        return view('nelayan.report', compact('datanelayan','dataahli_waris' ));
+        return view('nelayan.report', compact('datanelayan' ));
     }
 }

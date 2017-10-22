@@ -40,21 +40,15 @@
                             <td>{{ $kub->nelayan }}</td>
                             <td>{{ $kub->alamat}}</td>
                             <td>{{ $kub->nelayan->kn }}</td>
-                            <td>{{ $kub-.nelayan->nama }}</td>
-                            <td>{{ $kub-.nelayan->alamat }}</td>
-                            <td>{{ $kub-.nelayan->status }}</td>
-                            <td>{{ $kub-.nelayan->nik }}</td>
-                            <td>{{ $kub-.nelayan->kecamatan }}</td>
-                            <td>{{ $kub-.nelayan->desa }}</td>
-                            <td>{{ $kub-.nelayan->tahun }}</td>
-                            <td><a href="{{ url('kub/'.$kub->id.'/edit') }}">Edit</a></td>
-                            <td>
-                                <form action="{{ url('kub/'.$kub->id) }}" method="POST">
-                                    {{ csrf_field() }}
-                                    {{ method_field('DELETE') }}
-                                    <button type="submit" class="btn btn-danger">Hapus</button>
-                                </form>
-                            </td>
+                            <td>{{ $kub->nelayan->nama }}</td>
+                            <td>{{ $kub->nelayan->alamat }}</td>
+                            <td>{{ $kub->nelayan->status }}</td>
+                            <td>{{ $kub->nelayan->nik }}</td>
+                            <td>{{ $kub->nelayan->kecamatan }}</td>
+                            <td>{{ $kub->nelayan->desa }}</td>
+                            <td>{{ $kub->nelayan->tahun }}</td>
+                            <td><Edit</td>
+                            <td><Hapus</td>
                         </tr>
                     @endforeach
                 </tbody>

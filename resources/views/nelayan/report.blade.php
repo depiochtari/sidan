@@ -33,8 +33,9 @@
                         <td>Alamat</td>
                         <td>Status Hubungan</td>
                         <td>HP</td>
-                        <td>BANK</td>
-                        <td>No Rekening</td>
+                        <td>Nama</td>
+                        <td>Nama Nelayan</td>
+                        <td>Alamat</td>
                     </th>
                 </thead>
                 <tbody>
@@ -55,8 +56,9 @@
                             <td>{{ $nelayan->ahli_waris->alamat }}</td>
                             <td>{{ $nelayan->ahli_waris->status }}</td>
                             <td>{{ $nelayan->ahli_waris->hp }}</td>
-                            <td>{{ $nelayan->ahli_waris->bank }}</td>
-                            <td>{{ $nelayan->ahli_waris->norek }}</td>
+                            <td>{{ $nelayan->kub->nama }}</td>
+                            <td>{{ $nelayan->kub->nelayan }}</td>
+                            <td>{{ $nelayan->kub->alamat }}</td>
                             <td><a href="{{ url('ahli-waris/'.$ahli_waris->id.'/edit') }}">Edit</a></td>
                             <td>
                                 <form action="{{ url('ahli-waris/'.$ahli_waris->id) }}" method="POST">
