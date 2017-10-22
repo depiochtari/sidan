@@ -20,7 +20,6 @@
                     <tr>
                         <td>ID</td>
                         <td>Nama Ahli Waris</td>
-                        <td>Nama Suami</td>
                         <td>NIK</td>
                         <td>Alamat</td>
                         <td>Status Hubungan</td>
@@ -44,7 +43,6 @@
                         <tr>
                             <td>{{ $ahli_waris->id }}</td>
                             <td>{{ $ahli_waris->nama }}</td>
-                            <td>{{ $ahli_waris->suami }}</td>
                             <td>{{ $ahli_waris->nik }}</td>
                             <td>{{ $ahli_waris->alamat }}</td>
                             <td>{{ $ahli_waris->status }}</td>

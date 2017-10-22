@@ -33,9 +33,6 @@
                         <td>Alamat</td>
                         <td>Status Hubungan</td>
                         <td>HP</td>
-                        <td>Nama</td>
-                        <td>Nama Nelayan</td>
-                        <td>Alamat</td>
                     </th>
                 </thead>
                 <tbody>

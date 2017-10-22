@@ -16,7 +16,6 @@ class CreateAhliWarisTable extends Migration
             $table->increments('id');
             $table->integer('nelayan_id')->unsigned();
             $table->string('nama');
-            $table->string('suami');
             $table->string('nik');
             $table->string('alamat');
             $table->string('status');

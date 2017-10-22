@@ -12,7 +12,6 @@
                             <tr>
                                 <td>ID</td>
                                 <td>Nama</td>
-                                <td>Nama Nelayan</td>
                                 <td>Alamat</td>
                                 <td>Edit</td>
                                 <td>Hapus</td>
@@ -23,7 +22,6 @@
                                 <tr>
                                     <td>{{ $kub->id }}</td>
                                     <td><a href="{{ url('kub/'.$kub->id) }}">{{ $kub->nama }}</a></td>
-                                    <td>{{ $kub->nelayan }}</td>
                                     <td>{{ $kub->alamat }}</td>
                                     <td><a href="{{ url('kub/'.$kub->id.'/edit') }}">Edit</a></td>
                                     <td>

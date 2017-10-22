@@ -24,20 +24,6 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('nelayan') ? ' has-error' : '' }}">
-                            <label for="nelayan" class="col-md-4 control-label">Nama Nelayan</label>
-
-                            <div class="col-md-6">
-                                <input id="nelayan" type="text" class="form-control" name="nelayan" value="{{ old('nelayan') }}">
-
-                                @if ($errors->has('nelayan'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('nelayan') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
                         <div class="form-group{{ $errors->has('alamat') ? ' has-error' : '' }}">
                             <label for="alamat" class="col-md-4 control-label">Alamat</label>
 

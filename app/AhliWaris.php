@@ -8,7 +8,7 @@ class AhliWaris extends Model
 {
     protected $table = 'ahli_waris';
 
-    protected $fillable = ['nama', 'suami', 'nik', 'alamat', 'status', 'hp', 'bank', 'norek', 'nelayan_id'];
+    protected $fillable = ['nama','nik', 'alamat', 'status', 'hp', 'bank', 'norek', 'nelayan_id'];
 
     public function nelayan()
     {

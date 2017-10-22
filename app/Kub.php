@@ -8,7 +8,7 @@ class Kub extends Model
 {
     protected $table = 'kub';
 	
-	protected $fillable = ['nama','nelayan','alamat', 'nelayan_id'];
+	protected $fillable = ['nama','alamat', 'nelayan_id'];
 
     public function nelayan()
     {

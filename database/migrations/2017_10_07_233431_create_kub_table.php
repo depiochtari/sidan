@@ -16,7 +16,6 @@ class CreateKubTable extends Migration
             
             $table->increments('id');
             $table->string('nama');
-            $table->string('nelayan');
             $table->string('alamat');
             $table->timestamps();
         });

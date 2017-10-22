@@ -36,7 +36,7 @@ class NelayanController extends Controller
      */
     public function create()
     {
-        $datakub = Kub::all();
+        $data_kub = Kub::all();
         $data_waris = ahliwaris::all();
         return view('nelayan.create', compact('data_kub', 'data_waris'));
     }

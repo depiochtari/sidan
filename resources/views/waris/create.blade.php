@@ -40,20 +40,6 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('suami') ? ' has-error' : '' }}">
-                            <label for="suami" class="col-md-4 control-label">Nama Suami</label>
-
-                            <div class="col-md-6">
-                                <input id="suami" type="text" class="form-control" name="suami" value="{{ old('suami') }}">
-
-                                @if ($errors->has('suami'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('suami') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
                         <div class="form-group{{ $errors->has('nik') ? ' has-error' : '' }}">
                             <label for="nik" class="col-md-4 control-label">NIK</label>
 

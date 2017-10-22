@@ -39,14 +39,14 @@
                             <td>{{ $kub->nama }}</td>
                             <td>{{ $kub->nelayan }}</td>
                             <td>{{ $kub->alamat}}</td>
-                            <td>{{ $kub->nelayan->kn }}</td>
-                            <td>{{ $kub->nelayan->nama }}</td>
-                            <td>{{ $kub->nelayan->alamat }}</td>
-                            <td>{{ $kub->nelayan->status }}</td>
-                            <td>{{ $kub->nelayan->nik }}</td>
-                            <td>{{ $kub->nelayan->kecamatan }}</td>
-                            <td>{{ $kub->nelayan->desa }}</td>
-                            <td>{{ $kub->nelayan->tahun }}</td>
+                            <td>{{ $kub-.nelayan->kn }}</td>
+                            <td>{{ $kub-.nelayan->nama }}</td>
+                            <td>{{ $kub-.nelayan->alamat }}</td>
+                            <td>{{ $kub-.nelayan->status }}</td>
+                            <td>{{ $kub-.nelayan->nik }}</td>
+                            <td>{{ $kub-.nelayan->kecamatan }}</td>
+                            <td>{{ $kub-.nelayan->desa }}</td>
+                            <td>{{ $kub-.nelayan->tahun }}</td>
                             <td><Edit</td>
                             <td><Hapus</td>
                         </tr>
