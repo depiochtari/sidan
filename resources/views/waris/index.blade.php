@@ -23,7 +23,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($dataahli_waris as $ahli_waris)
+                            @foreach($data_waris as $ahli_waris)
                                 <tr>
                                     <td>{{ $ahli_waris->id }}</td>
                                     <td>{{ $ahli_waris->nama }}</td>
