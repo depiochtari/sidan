@@ -57,8 +57,6 @@ class kubcontroller extends Controller
      */
     public function show(Kub $kub)
     {
-        $kub->report($nelayan->all());
-         return back();
         return view('kub.show', compact('kub'));
     }
 

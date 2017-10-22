@@ -18,7 +18,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($datakub as $kub)
+                            @foreach($data_kub as $kub)
                                 <tr>
                                     <td>{{ $kub->id }}</td>
                                     <td><a href="{{ url('kub/'.$kub->id) }}">{{ $kub->nama }}</a></td>
