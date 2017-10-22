@@ -17,7 +17,7 @@
             </table>
             <table id="datatable" class="table table-condensed">
                 <thead>
-                    <th>
+                    <tr>
                         <td>ID</td>
                         <td>KN</td>
                         <td>Nama</td>
@@ -34,12 +34,12 @@
                         <td>HP</td>
                         <td>Nama Kub</td>
                         <td>Alamat</td>
-                    </th>
+                    </tr>
                 </thead>
                 <tbody>
                     @foreach($datanelayan as $nelayan)
                         <tr>
-                            <td>{{ $ahli_waris->id }}</td>
+                            <td>{{ $nelayan->id }}</td>
                             <td>{{ $nelayan->kn }}</td>
                             <td>{{ $nelayan->nama }}</td>
                             <td>{{ $nelayan->alamat }}</td>
@@ -48,16 +48,16 @@
                             <td>{{ $nelayan->kecamatan }}</td>
                             <td>{{ $nelayan->desa }}</td>
                             <td>{{ $nelayan->tahun }}</td>
-                            <td>{{ $nelayan->ahli_waris->nama }}</td>
-                            <td>{{ $nelayan->ahli_waris->nik }}</td>
-                            <td>{{ $nelayan->ahli_waris->alamat }}</td>
-                            <td>{{ $nelayan->ahli_waris->status }}</td>
-                            <td>{{ $nelayan->ahli_waris->hp }}</td>
+                            <td>{{ $nelayan->ahliwaris->nama }}</td>
+                            <td>{{ $nelayan->ahliwaris->nik }}</td>
+                            <td>{{ $nelayan->ahliwaris->alamat }}</td>
+                            <td>{{ $nelayan->ahliwaris->status }}</td>
+                            <td>{{ $nelayan->ahliwaris->hp }}</td>
                             <td>{{ $nelayan->kub->nama }}</td>
                             <td>{{ $nelayan->kub->alamat }}</td>
-                            <td><a href="{{ url('ahli-waris/'.$ahli_waris->id.'/edit') }}">Edit</a></td>
+                            <td><a href="{{ url('nelayan/'.$nelayan->id.'/edit') }}">Edit</a></td>
                             <td>
-                                <form action="{{ url('ahli-waris/'.$ahli_waris->id) }}" method="POST">
+                                <form action="{{ url('nelayan/'.$nelayan->id) }}" method="POST">
                                     {{ csrf_field() }}
                                     {{ method_field('DELETE') }}
                                     <button type="submit" class="btn btn-danger">Hapus</button>

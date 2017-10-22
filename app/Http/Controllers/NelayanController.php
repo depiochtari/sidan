@@ -105,6 +105,6 @@ class NelayanController extends Controller
      public function report()
     {
         $datanelayan = Nelayan::all();
-        return view('nelayan.report', compact('datanelayan'));
+        return view('nelayan.report', compact('datanelayan' ));
     }
 }

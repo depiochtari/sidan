@@ -22,7 +22,7 @@
             <p>Data Anggota KUB {{ $kub->nama }} dengan jumlah total {{ count($kub->nelayan) }}</p>
             <table class="table table-stripped">
                 <thead>
-                    <th>
+                    <tr>
                         <td>ID</td>
                         <td>KN</td>
                         <td>Nama</td>
@@ -34,7 +34,7 @@
                         <td>Tahun</td>
                         <td>Edit</td>
                         <td>Hapus</td>
-                    </th>
+                    </tr>
                 </thead>
                 <tbody>
                     @foreach($kub->nelayan() as $nelayan)

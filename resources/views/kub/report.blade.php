@@ -20,7 +20,6 @@
                     <th>
                         <td>ID</td>
                         <td>Nama</td>
-                        <td>Nama Nelayan</td>
                         <td>Alamat</td>
                         <td>KN</td>
                         <td>Nama</td>
@@ -37,7 +36,6 @@
                         <tr>
                             <td>{{ $kub->id }}</td>
                             <td>{{ $kub->nama }}</td>
-                            <td>{{ $kub->nelayan }}</td>
                             <td>{{ $kub->alamat}}</td>
                             <td>{{ $kub->nelayan->kn }}</td>
                             <td>{{ $kub->nelayan->nama }}</td>
