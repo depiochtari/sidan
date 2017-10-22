@@ -37,7 +37,7 @@
                     </th>
                 </thead>
                 <tbody>
-                    @foreach($kub->nelayan as $nelayan)
+                    @foreach($kub->nelayan() as $nelayan)
                         <tr>
                             <td>{{ $nelayan->id }}</td>
                             <td>{{ $nelayan->kn }}</td>
