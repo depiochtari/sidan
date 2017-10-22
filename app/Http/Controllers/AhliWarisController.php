@@ -104,6 +104,6 @@ class AhliWarisController extends Controller
     public function report()
     {
         $data_waris = AhliWaris::all();
-        return view('waris.report', compact('data_waris','datanelayan' ));
+        return view('waris.report', compact('data_waris'));
     }
 }
