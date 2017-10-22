@@ -22,8 +22,8 @@ class kubcontroller extends Controller
      */
     public function index()
     {
-        $datakub = kub::all();
-        return view('kub.index', compact('datakub'));
+        $data_kub = kub::all();
+        return view('kub.index', compact('data_kub'));
     }
 
     /**
