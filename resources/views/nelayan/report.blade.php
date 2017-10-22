@@ -51,7 +51,7 @@
                             <td>{{ $nelayan->ahli_waris->alamat }}</td>
                             <td>{{ $nelayan->ahli_waris->status }}</td>
                             <td>{{ $nelayan->ahli_waris->hp }}</td>
-                            <td>{{ $nelayan->kub->nama }}</td>
+                            <td>{{ $nelayan-.kub->nama }}</td>
                             <td>{{ $nelayan->kub->alamat }}</td>
                             <td><a href="{{ url('ahli-waris/'.$ahli_waris->id.'/edit') }}">Edit</a></td>
                             <td>
