@@ -10,6 +10,22 @@
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/ahli-waris') }}">
                         {{ csrf_field() }}
 
+                        <div class="form-group{{ $errors->has('nelayan_id') ? ' has-error' : '' }}">
+                            <label for="nelayan_id" class="col-md-4 control-label">nelayan</label>
+                            <div class="col-md-6">
+                                <select name="nelayan_id" id="nelayan_id" class="form-control">
+                                    @foreach($datanelayan as $nelayan)
+                                        <option value="{{ $nelayan->id }}">{{$nelayan->nama}}</option>
+                                    @endforeach
+                                </select>
+                                @if ($errors->has('nelayan_id'))
+                                     <span class="help-block">
+                                         <strong>{{ $errors->first('nelayan_id') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
                         <div class="form-group{{ $errors->has('nama') ? ' has-error' : '' }}">
                             <label for="nama" class="col-md-4 control-label">Nama Ahli Waris</label>
 
