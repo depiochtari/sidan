@@ -22,8 +22,7 @@ class kubcontroller extends Controller
      */
     public function index()
     {
-        $data_kub = kub::all();
-        $data_kub->load('nelayan');
+        $datakub = kub::all();
         return view('kub.index', compact('datakub'));
     }
 
