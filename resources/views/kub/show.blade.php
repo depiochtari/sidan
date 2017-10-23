@@ -37,17 +37,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($kub->nelayan() as $nelayan)
+                    @foreach($kub->nelayan as $nelayan)
                         <tr>
-                            <td>{{ $nelayan->kub->id }}</td>
-                            <td>{{ $nelayan->kub->kn }}</td>
-                            <td>{{ $nelayan->->nama }}</td>
+                            <td>{{ $nelayan->id }}</td>
+                            <td>{{ $nelayan->kn }}</td>
+                            <td>{{ $nelayan->nama }}</td>
                             <td>{{ $nelayan->alamat }}</td>
-                            <td>{{ $nelayan->->status }}</td>
-                            <td>{{ $nelayan->->nik }}</td>
-                            <td>{{ $nelayan->->kecamatan }}</td>
-                            <td>{{ $nelayan->->desa }}</td>
-                            <td>{{ $nelayan->->tahun }}</td>
+                            <td>{{ $nelayan->status }}</td>
+                            <td>{{ $nelayan->nik }}</td>
+                            <td>{{ $nelayan->kecamatan }}</td>
+                            <td>{{ $nelayan->desa }}</td>
+                            <td>{{ $nelayan->tahun }}</td>
                             <td><a href="{{ url('nelayan/'.$nelayan->id.'/edit') }}">Edit</a></td>
                             <td>
                                 <form action="{{ url('nelayan/'.$nelayan->id) }}" method="POST">

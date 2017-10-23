@@ -12,6 +12,6 @@ class Kub extends Model
 
     public function nelayan()
     {
-        return $this->belongsTo(Nelayan::class, 'nelayan_id');
+        return $this->hasMany(Nelayan::class, 'kub_id');
     }
 }
