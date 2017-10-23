@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Kub;
-use App\nelayan;
+use App\Nelayan;
 
 class kubcontroller extends Controller
 {
@@ -68,8 +68,7 @@ class kubcontroller extends Controller
      */
     public function edit(Kub $kub)
     {
-        $datanelayan = Nelayan::all();
-        return view('kub.edit', compact('kub', 'datanelayan'));
+        return view('kub.edit', compact('kub'));
     }
 
     /**
