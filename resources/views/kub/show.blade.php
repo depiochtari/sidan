@@ -32,8 +32,8 @@
                         <td>Kecamatan</td>
                         <td>Desa</td>
                         <td>Tahun</td>
-                        <td>Edit</td>
-                        <td>Hapus</td>
+                        <td class="hidden-print">Edit</td>
+                        <td class="hidden-print">Hapus</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -48,8 +48,8 @@
                             <td>{{ $nelayan->kecamatan }}</td>
                             <td>{{ $nelayan->desa }}</td>
                             <td>{{ $nelayan->tahun }}</td>
-                            <td><a href="{{ url('nelayan/'.$nelayan->id.'/edit') }}">Edit</a></td>
-                            <td>
+                            <td class="hidden-print"><a href="{{ url('nelayan/'.$nelayan->id.'/edit') }}">Edit</a></td>
+                            <td class="hidden-print">
                                 <form action="{{ url('nelayan/'.$nelayan->id) }}" method="POST">
                                     {{ csrf_field() }}
                                     {{ method_field('DELETE') }}
