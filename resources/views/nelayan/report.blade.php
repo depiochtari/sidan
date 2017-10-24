@@ -31,7 +31,7 @@
                         <td>NIK</td>
                         <td>Alamat</td>
                         <td>Status Hubungan</td>
-                        <td>HP</td>
+                        <td>Nomor HP</td>
                         <td>Nama Kub</td>
                         <td>Alamat</td>
                     </tr>

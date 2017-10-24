@@ -15,7 +15,7 @@
                                 <td>NIK</td>
                                 <td>Alamat</td>
                                 <td>Status Hubungan</td>
-                                <td>HP</td>
+                                <td>Nomor HP</td>
                                 <td>BANK</td>
                                 <td>No Rekening</td>
                                 <td>Edit</td>
