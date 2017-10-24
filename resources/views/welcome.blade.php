@@ -8,7 +8,7 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
-                    Your Application's Landing Page.
+                   <td width="100%"><img src="{{ url('images/dinas.jpg') }}" width="900" height="500" /></td>
                 </div>
             </div>
         </div>
