@@ -51,10 +51,10 @@
   <tr>
     <td width="10%" height="176"><img src="{{ url('images/logo.png') }}" width="100" height="100" /></td>
     <td width="80%">
-              <center><p>SISTEM INFORMASI DATA ASURANSI NELAYAN</p>
-                        <p>DINAS KELAUTAN DAN PERIKANAN</p>
-                         <p> KABUPATEN KEBUMEN</p>
-                         <p> Jalan Arungbinang No.21 Kebumen</p></center>
+              <center><h1>SISTEM INFORMASI ASURANSI NELAYAN</h1>
+                        <h1>DINAS KELAUTAN DAN PERIKANAN</h1>
+                         <h1> KABUPATEN KEBUMEN</h1>
+                         <h1> Jalan Arungbinang No.21 Kebumen</h1></center>
     </td>
     <td width="10%"><img src="{{ url('images/ikan.png') }}" width="100" height="100" /></td>
   </tr>

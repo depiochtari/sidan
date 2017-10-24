@@ -5,18 +5,27 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <table class="tabel table-stripped">
-                <tbody>
+                <tr>
+                    <td width="10%" height="176"><img src="{{ url('images/logo.png') }}" width="100" height="100" /></td>
+                    <td width="80%">
+                    <center><p>SISTEM INFORMASI ASURANSI NELAYAN</p>
+                        <p>DINAS KELAUTAN DAN PERIKANAN</p>
+                        <p>KABUPATEN KEBUMEN</p>
+                        <p>Jalan Arungbinang No.21 Kebumen</p></center>
+                    </td>
+                    <td width="10%"><img src="{{ url('images/ikan.png') }}" width="100" height="100" /></td>
+                </tr>
                     <tr>
                         <td width="10%">Nama KUB</td>
                         <td width="1%">:</td>
                         <td>{{ $kub->nama }}</td>
                     </tr>
+
                     <tr>
                         <td>Alamat KUB</td>
                         <td>:</td>
                         <td>{{ $kub->alamat }}</td>
                     </tr>
-                </tbody>
             </table>
             <hr>
             <p>Data Anggota KUB {{ $kub->nama }} dengan jumlah total {{ count($kub->nelayan) }}</p>

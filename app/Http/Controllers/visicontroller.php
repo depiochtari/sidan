@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Visi;
 
 class visicontroller extends Controller
 {
@@ -15,7 +16,8 @@ class visicontroller extends Controller
      */
     public function index()
     {
-        //
+        $datavisi = Visi::all();
+        return view('visi.index', compact('datavisi'));
     }
 
     /**
@@ -25,7 +27,7 @@ class visicontroller extends Controller
      */
     public function create()
     {
-        //
+        return view('visi.create');
     }
 
     /**
@@ -34,9 +36,10 @@ class visicontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Visi $visi)
     {
-        //
+        $visi->create($request->all());
+        return back();
     }
 
     /**
