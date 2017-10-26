@@ -7,10 +7,11 @@
                 <tr>
                     <td width="10%" height="176"><img src="{{ url('images/logo.png') }}" width="100" height="100" /></td>
                     <td width="80%">
-                    <center><p>SISTEM INFORMASI ASURANSI NELAYAN</p>
-                        <p>DINAS KELAUTAN DAN PERIKANAN</p>
-                        <p>KABUPATEN KEBUMEN</p>
-                        <p>alan Arungbinang No.21 Kebumen</p></center>
+                    <center><p>PEMERINTAH KABUPATEN KEBUMEN</p>
+                        <p>DINAS KELAUTAN DAN PERIKANAN KEBUMEN</p>
+                        <p>Alamat: Jl. arungbinang No.21 Kebumen. Telp/Fax : 0287-381245 0287-381245</p>
+                        <p>Email : dinlutkan.kebumen@gmail.com</p>
+                        <p>KEBUMEN 54311</p></center>
                     </td>
                     <td width="10%"><img src="{{ url('images/ikan.png') }}" width="100" height="100" /></td>
                 </tr>

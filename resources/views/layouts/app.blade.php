@@ -65,6 +65,11 @@
                 <!-- Left Side Of Navbar -->
 {{--                <ul class="nav navbar-nav">
                 </ul> --}}
+                
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    Sidan
+                </a>
+            </div>
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
