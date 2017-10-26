@@ -19,9 +19,6 @@ class CreateAhliWarisTable extends Migration
             $table->string('nik');
             $table->string('alamat');
             $table->string('status');
-            $table->string('hp');
-            $table->string('bank');
-            $table->string('norek');
             $table->timestamps();
         });
     }

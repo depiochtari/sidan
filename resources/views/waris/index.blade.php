@@ -15,9 +15,6 @@
                                 <td>NIK</td>
                                 <td>Alamat</td>
                                 <td>Status Hubungan</td>
-                                <td>Nomor HP</td>
-                                <td>BANK</td>
-                                <td>No Rekening</td>
                                 <td>Edit</td>
                                 <td>Hapus</td>
                             </tr>
@@ -30,9 +27,6 @@
                                     <td>{{ $ahli_waris->nik }}</td>
                                     <td>{{ $ahli_waris->alamat }}</td>
                                     <td>{{ $ahli_waris->status }}</td>
-                                    <td>{{ $ahli_waris->hp }}</td>
-                                    <td>{{ $ahli_waris->bank }}</td>
-                                    <td>{{ $ahli_waris->norek }}</td>
                                     <td><a href="{{ url('ahli-waris/'.$ahli_waris->id.'/edit') }}">Edit</a></td>
                                     <td>
                                         <form action="{{ url('ahli-waris/'.$ahli_waris->id) }}" method="POST">

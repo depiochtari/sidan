@@ -32,7 +32,6 @@
                         <td>NIK</td>
                         <td>Alamat</td>
                         <td>Status Hubungan</td>
-                        <td>Nomor HP</td>
                         <td>Nama Kub</td>
                         <td>Alamat</td>
                     </tr>
@@ -40,7 +39,7 @@
                 <tbody>
                     @foreach($datanelayan as $nelayan)
                         <tr>
-                            <td>{{ $nelayan->id }}</td>
+                            <td>{{ $n++ }}</td>
                             <td>{{ $nelayan->kn }}</td>
                             <td>{{ $nelayan->nama }}</td>
                             <td>{{ $nelayan->alamat }}</td>
@@ -53,7 +52,6 @@
                             <td>{{ $nelayan->ahliwaris->nik }}</td>
                             <td>{{ $nelayan->ahliwaris->alamat }}</td>
                             <td>{{ $nelayan->ahliwaris->status }}</td>
-                            <td>{{ $nelayan->ahliwaris->hp }}</td>
                             <td>{{ $nelayan->kub->nama }}</td>
                             <td>{{ $nelayan->kub->alamat }}</td>
                             <td><Edit</td>

@@ -24,9 +24,6 @@
                         <td>NIK</td>
                         <td>Alamat</td>
                         <td>Status Hubungan</td>
-                        <td>Nomor HP</td>
-                        <td>BANK</td>
-                        <td>No Rekening</td>
                         <td>KN</td>
                         <td>Nama</td>
                         <td>Alamat</td>
@@ -47,9 +44,6 @@
                             <td>{{ $ahli_waris->nik }}</td>
                             <td>{{ $ahli_waris->alamat }}</td>
                             <td>{{ $ahli_waris->status }}</td>
-                            <td>{{ $ahli_waris->hp }}</td>
-                            <td>{{ $ahli_waris->bank }}</td>
-                            <td>{{ $ahli_waris->norek }}</td>
                             <td>{{ $ahli_waris->nelayan->kn }}</td>
                             <td>{{ $ahli_waris->nelayan->nama }}</td>
                             <td>{{ $ahli_waris->nelayan->alamat }}</td>
