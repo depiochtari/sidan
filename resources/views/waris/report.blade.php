@@ -58,6 +58,13 @@
                     @endforeach
                 </tbody>
             </table>
+<tr><td> <width="53%" ></td>
+<td width="53%" ><div class="ji" align='right'>Kepala Dinas Kelautan dan Perikanan</div>
+<div class="ji" align='right'>Kabupaten Kebumen</div><br></br>
+<div class="ji" align='right'<b><u>Drs. H. La Ode Haslan</div></b></u>
+<div class="ji" align='right'>NIP. 19621231 199003 1 214</div>
+</td>
+</tr>
         </div>
     </div>
 </div>
