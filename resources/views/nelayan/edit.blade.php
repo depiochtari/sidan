@@ -59,49 +59,49 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('kub') ? ' has-error' : '' }}">
-                            <label for="kub" class="col-md-4 control-label">KUB</label>
+                        <div class="form-group{{ $errors->has('nik') ? ' has-error' : '' }}">
+                            <label for="nik" class="col-md-4 control-label">NIK</label>
                             <div class="col-md-6">
-                                <input id="kub" type="text" class="form-control" name="kub" value="{{ $nelayan->kub }}">
-                                @if ($errors->has('kub'))
+                                <input id="nik" type="text" class="form-control" name="nik" value="{{ $nelayan->nik }}">
+                                @if ($errors->has('nik'))
                                      <span class="help-block">
-                                         <strong>{{ $errors->first('kub') }}</strong>
+                                         <strong>{{ $errors->first('nik') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('hp') ? ' has-error' : '' }}">
-                            <label for="hp" class="col-md-4 control-label">HP</label>
+                        <div class="form-group{{ $errors->has('kecamatan') ? ' has-error' : '' }}">
+                            <label for="kecamatan" class="col-md-4 control-label">Kecamatan</label>
                             <div class="col-md-6">
-                                <input id="hp" type="text" class="form-control" name="hp" value="{{ $nelayan->hp }}">
-                                @if ($errors->has('hp'))
+                                <input id="kecamatan" type="text" class="form-control" name="kecamatan" value="{{ $nelayan->kecamatan }}">
+                                @if ($errors->has('kecamatan'))
                                      <span class="help-block">
-                                         <strong>{{ $errors->first('hp') }}</strong>
+                                         <strong>{{ $errors->first('kecamatan') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('bank') ? ' has-error' : '' }}">
-                            <label for="bank" class="col-md-4 control-label">BANK</label>
+                        <div class="form-group{{ $errors->has('desa') ? ' has-error' : '' }}">
+                            <label for="desa" class="col-md-4 control-label">Desa</label>
                             <div class="col-md-6">
-                                <input id="bank" type="text" class="form-control" name="bank" value="{{ $nelayan->bank }}">
-                                @if ($errors->has('bank'))
+                                <input id="desa" type="text" class="form-control" name="desa" value="{{ $nelayan->desa }}">
+                                @if ($errors->has('desa'))
                                      <span class="help-block">
-                                         <strong>{{ $errors->first('bank') }}</strong>
+                                         <strong>{{ $errors->first('desa') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('norek') ? ' has-error' : '' }}">
-                            <label for="norek" class="col-md-4 control-label">No Rekening</label>
+                        <div class="form-group{{ $errors->has('tahun') ? ' has-error' : '' }}">
+                            <label for="tahun" class="col-md-4 control-label">Tahun</label>
                             <div class="col-md-6">
-                                <input id="norek" type="text" class="form-control" name="norek" value="{{ $nelayan->norek }}">
-                                @if ($errors->has('norek'))
+                                <input id="tahun" type="text" class="form-control" name="tahun" value="{{ $nelayan->tahun }}">
+                                @if ($errors->has('tahun'))
                                      <span class="help-block">
-                                         <strong>{{ $errors->first('norek') }}</strong>
+                                         <strong>{{ $errors->first('tahun') }}</strong>
                                     </span>
                                 @endif
                             </div>

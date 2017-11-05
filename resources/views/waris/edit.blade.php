@@ -68,48 +68,6 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('hp') ? ' has-error' : '' }}">
-                            <label for="hp" class="col-md-4 control-label">HP</label>
-
-                            <div class="col-md-6">
-                                <input id="hp" type="text" class="form-control" name="hp" value="{{ $ahli_waris->hp }}">
-
-                                @if ($errors->has('hp'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('hp') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('bank') ? ' has-error' : '' }}">
-                            <label for="bank" class="col-md-4 control-label">BANK</label>
-
-                            <div class="col-md-6">
-                                <input id="bank" type="text" class="form-control" name="bank" value="{{ $ahli_waris->bank }}">
-
-                                @if ($errors->has('bank'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('bank') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('norek') ? ' has-error' : '' }}">
-                            <label for="norek" class="col-md-4 control-label">No Rekening</label>
-
-                            <div class="col-md-6">
-                                <input id="norek" type="text" class="form-control" name="norek" value="{{ $ahli_waris->norek }}">
-
-                                @if ($errors->has('norek'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('norek') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
